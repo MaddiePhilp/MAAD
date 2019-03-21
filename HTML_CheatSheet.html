@@ -1,0 +1,480 @@
+<!doctype HTML>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Cheatsheet! >.<</title>
+  </head>
+
+  <style media="screen">
+    .htmltag{
+      color:	mediumblue  ;
+      font-family: courier;
+      background-color: #F5F5F5;
+    }
+    .htmltext{
+      color: black;
+      font-family:courier;
+      background-color:#F5F5F5;
+    }
+    .codeexample{background-color:#F5F5F5;
+                color:mediumblue;
+                font-family: courier;
+                padding:10px;
+                margin:auto;
+                width:55%;
+                border:1px solid black
+    }
+    table.center{
+      margin-left:auto;
+      margin-right:auto;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    tr:hover {background-color: #f5f5f5;}
+  </style>
+
+  <body>
+    <h1>My Cheatsheet!</h1>
+
+    <h2>HTML Basics</h2>
+
+    <p><a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"> Hyper Text Markup Language <abbr title="Hyper Text Markup Langague">HTML</abbr> </a>forms the basis of how webpages are displayed on the internet. It is used to dictate where elements will be displayed on the page. The current iteration is  HTML 5. Tags in HTML are shown by greater and less than symbols, for example <span class="htmltag">&lthead&gt</span>. For most tags the code end point is designated with the same word proceeded by a slash, for example <span class="htmltag">&lt/head&gt</span>. </p>
+
+    <h2>Good Practice and HTML Document Structure</h2>
+
+    <p>The first line in any code should tell the computer or a person what langauge the code is writen in. In HTML this looks like <span class="htmltag">&lt!DOCTYPE html&gt</span>. The first level of the code (<span class="htmltag">&lthtml&gt &lt/html&gt</span>) shows where the HTML starts and ends. Everything within these should be indented by one tab. The next section of the code contains the <span class="htmltag">&lthead&gt</span> information like the page <span class="htmltag">&lttitle&gt</span>. In this example the title is "My Cheatsheet! &gt.&lt". All the information within the head should be indented one more level (so two levels total). The <span class="htmltag">&lt/head&gt</span> command is on the same indentation as the first <span class="htmltag">&lthead&gt</span> command. The next section in the document is the <span class="htmltag">&ltbody&gt</span>. This contains the main contents of the page. This should also be indented within the <span class="htmltag">&ltbody&gt</span> and <span class="htmltag">&lt/body&gt</span> commands. Everyone has personal preferences but proper code structure looks something like this:</p>
+
+    <div class=codeexample>
+      &lt!DOCTYPE html&gt <br>
+      &lthtml&gt <br>
+      &nbsp &lthead&gt <br>
+      &nbsp &nbsp &lttitle&gt <span class="htmltext">My Title</span> &lt/title&gt <br>
+      &nbsp &lt/head&gt <br>
+      &nbsp &ltstyle&gt <br>
+      &nbsp &nbsp <span class="htmltext">.examplestyle{</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">color: black;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">font-family: helvitica;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">}</span> <br>
+      &nbsp &lt/style&gt <br>
+      &nbsp &ltbody&gt <br>
+      &nbsp &nbsp &lth1&gt<span class="htmltext">My Heading</span>&lt/h1&gt <br>
+      &nbsp &nbsp &ltp&gt<span class="htmltext">My text block about something really<span class="htmltag">&ltstrong&gt</span>awesome<span class="htmltag">&lt/strong&gt</span>.</span>&lt/p&gt <br>
+      &nbsp &lt/body&gt <br>
+      &lt/html&gt
+    </div>
+
+    <h2>Headings and Paragraphs</h2>
+
+    <p>The structure of a webpage, like any document, is divided into headings and paragraphs. Headings are used to designate titles the code. They are defined with the &lth1&gt to &lth6&gt tags. The most important heading is <span class="htmltag">&lth1&gt</span> for example, "My Cheatsheet!" at the top of this page is <span class="htmltag">&lth1&gt</span> and "HTML Basics" is <span class = htmltag>&lth2&gt</span>. Here are examples of the different levels:</p>
+
+    <h1 style="text-align:center;">Heading 1</h1>
+    <h2 style="text-align:center;">Heading 2</h2>
+    <h3 style="text-align:center;">Heading 3</h3>
+    <h4 style="text-align:center;">Heading 4</h4>
+    <h5 style="text-align:center;">Heading 5</h5>
+    <h6 style="text-align:center;">Heading 6</h6>
+
+    <p>Headings 4 - 6 are rarely used. A <span class = htmltag >&ltp&gt</span> means a paragraph of text, like this secntence! But the <span class = htmltag >&ltp&gt</span> does not have different numbered levels. Both the heading and paragraphs need the end of the heading to be shown in the code. For example the page heading looks like: <span class = htmltag >&lth1&gt <span class="htmltext">My Cheatsheet!</span> &lt/h1&gt</span>.</p>
+
+    <h2>Text Formatting</h2>
+    <h3>HTML Tags</h3>
+
+    <p>Most formating is done with <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">Cascading Sheet Styles <abbr title="Cascading Sheet Styles">CSS</abbr></a>, including some of the examples below. However, there are some functions which alter how text is displayed. These are put directly around the words which they relate to <strong>like this!</strong> The display functions work like the head and paragraph markers, needing a start and end point to be designated, but can be contained within the paragraph or heading data.</p>
+
+    <table class='center' style="text-align:center;">
+      <tr>
+        <th style=background:#F5F5F5>Effect</th>
+        <th style=background:#F5F5F5>Tag</th>
+      </tr>
+      <tr>
+        <td><strong>Bold</strong></td>
+        <td><span class = htmltag>&ltstrong&gt <span class="htmltext">Text</span> &lt/strong&gt</span></td>
+      </tr>
+      <tr>
+        <td><em>Italics</em></td>
+        <td><span class = htmltag>&ltem&gt <span class="htmltext">Text</span> &lt/em&gt</span></td>
+      </tr>
+      <tr>
+        <td><span style ="text-decoration:underline;"> Underline</span></td>
+        <td><span class="htmltag">&ltspan style = "text-decoration: underline;"&gt <span class="htmltext">Text</span> &lt/span&gt</span></td>
+      </tr>
+      <tr>
+        <td><abbr title="abbreviation">abbr</abbr></td>
+        <td><span class="htmltag"> &ltabbr title="Longer Text"&gt <span class="htmltext">AbbreviatedText</span> &lt/abbr&gt</span></td>
+      </tr>
+      <tr>
+        <td><q>Quotation</q></td>
+        <td><span class="htmltag"> &ltq&gt <span class="htmltext">Quote Text</span> &lt/q&gt</span></td>
+      </tr>
+      <tr>
+        <td><hr /></td>
+        <td><span class=" htmltag"> &lthr /&gt</span></td>
+      </tr>
+      <tr>
+        <td><small>Small text</small></td>
+        <td> <span class="htmltag"> &ltsmall&gt<span class="htmltext">Smalltext</span>&lt/small&gt</span></td>
+      </tr>
+      <tr>
+        <td><sup>Superscript</sup></td>
+        <td><span class="htmltag">&ltsup&gt <span class="htmltext">Superscript</span>&lt/sup&gt</span></td>
+      </tr>
+      <tr>
+        <td><sub>Subscript</sub></td>
+        <td><span class=htmltag>&ltsub&gt <span class="htmltext">Subsecript</span> &lt/sub&gt</span></td>
+      </tr>
+    </table>
+
+    <h3>CSS Styles</h3>
+    <p>Styles are built on top of html code using css to change text color, background color, borders, justification, margins, provide padding or fonts. <span class="htmltag">style</span> is an attribute of other tags. For example <span class="htmltag">&ltp style="color:red"&gt<span class="htmltext">This is red!</span>&lt/p&gt</span> creates "<span style="color:red">This is red!</span>". These attributes can also be combined to change the font, color and size at the same time. For example the code <span class="htmltag">&ltp style = "text-align:center; color:blue; font-family:impact; font-size:xx-large&gt<span class="htmltext">I'm big, blue and bold now!</span>&lt/p&gt</span> would produce:</p> <div style="font-size:xx-large;font-family:impact;color:blue;text-align:center"> I'm big, blue and bold now!</div>
+    <h4>Color</h4>
+    <p>The color attribute can be defined by <a href="https://www.w3schools.com/tags/ref_colornames.asp" target="_blank">name</a> or by <a href="https://www.w3schools.com/colors/colors_picker.asp" target="_blank">hex</a>. Example text colours and name and hex:</p>
+
+    <table class="center" style="text-align:center;">
+      <tr>
+        <th style=background:#F5F5F5>Color</th>
+        <th style=background:#F5F5F5>Attribute</th>
+      </tr>
+      <tr>
+        <td style="color:red">Red</td>
+        <td><span class = htmltag>color:red</span></td>
+      </tr>
+      <tr>
+        <td style="color:purple">Purple</td>
+        <td> <span class="htmltag">color:purple</span></td>
+      </tr>
+      <tr>
+        <td style="color:blue">Blue</td>
+        <td> <span class = htmltag>color:blue</span></td>
+      </tr>
+      <tr>
+        <td style="color:#0000FF">Blue</td>
+        <td> <span class="htmltag">color:#0000FF</span></td>
+      </tr>
+      <tr>
+        <td style="color:#FFA07A">Salmon</td>
+        <td> <span class="htmltag">color:#FFA07A</span></td>
+      </tr>
+      <tr>
+        <td style="color:#FF4500">Orange</td>
+        <td> <span class="htmltag">color:#FF4500</span></td>
+      </tr>
+    </table>
+
+    <h4>Fonts</h4>
+    <p>Fonts are defined using the <span class="htmltag">font-family</span> attribute. Some font and attribute examples are in the table below. More can be found <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">here</a>.</p>
+
+    <table class="center" style="text-align:center;">
+      <tr>
+        <th style=background:#F5F5F5>Font</th>
+        <th style=background:#F5F5F5>Heading</th>
+        <th style=background:#F5F5F5>Paragraph</th>
+        <th style=background:#F5F5F5>Attribute</th>
+      </tr>
+      <tr>
+        <td> Serif </td>
+        <td><h1 style="font-family:serif">Heading</h1></td>
+        <td><p style="font-family:serif">Paragraph</p></td>
+        <td><span class = htmltag>font-family:serif</span></td>
+      </tr>
+      <tr>
+        <td> Comic Sans MS </td>
+        <td><h1 style="font-family:Comic Sans MS">Heading</h1></td>
+        <td><p style="font-family:Comic Sans MS">Paragraph</p></td>
+        <td><span class = htmltag>font-family:Comic Sans MS</span></td>
+      </tr>
+      <tr>
+        <td> Monospace </td>
+        <td><h1 style="font-family:monospace">Heading</h1></td>
+        <td><p style="font-family:monospace">Paragraph</p></td>
+        <td><span class = htmltag>font-family:monospace</span></td>
+      </tr>
+    </table>
+
+    <h4>Text Size</h4>
+
+    <p>There are four different units to define size in the browser:</p>
+    <ol>
+      <li><strong>Ems (Em)</strong> Ems are scalable. 1 relates to the current font size for example, if the font size is 12pt then 1em is 12pt. This makes them scalable, usefule for mobile web browsers.</li>
+      <li><strong>Pixels (Px)</strong> Pixels are a fixed size. 1px is 1 pixel on a computer screen. This mean pixel perfect measurement but it can not scale up or down for mobile users.</li>
+      <li><strong>Points (Pt)</strong> Points relate to printed media. 1pt is 1/72 of an inch. Therefore, like pixels, points can not scale in size.</li>
+      <li><strong>Percent (%)</strong> Percent is like em units. Apart from that 100% is the current font size. So if the font were 12pt then 12pt would equal 100%. This makes it scalable for mobile.</li>
+    </ol>
+
+    <p>The <span class="htmltag">font-size</span> property can be set by a word or number attribute. For example of unit and number use try <a href="https://www.w3schools.com/cssref/pr_font_font-size.asp" target="_blank">here</a> or <a href="https://css-tricks.com/almanac/properties/f/font-size/" target="_blank">here</a>.</p>
+
+    <table class="center" style="text-align:center;">
+      <tr>
+        <th style=background:#F5F5F5>Size </th>
+        <th style=background:#F5F5F5>Attribute</th>
+      </tr>
+      <tr>
+        <td style="font-size:xx-small">xx-small</td>
+        <td><span class = htmltag>font-size:xx-small</span></td>
+      </tr>
+      <tr>
+        <td style="font-size:x-small">x-small</td>
+        <td><span class = htmltag>font-size:x-small</span></td>
+      </tr>
+      <tr>
+        <td style="font-size:small">small</td>
+        <td><span class = htmltag>font-size:small</span></td>
+      </tr>
+      <tr>
+        <td style="font-size:medium">medium</td>
+        <td><span class = htmltag>font-size:medium</span></td>
+      </tr>
+      <tr>
+        <td style="font-size:large">large</td>
+        <td><span class = htmltag>font-size:large</span></td>
+      </tr>
+      <tr>
+        <td style="font-size:x-large">x-large</td>
+        <td><span class = htmltag>font-size:x-large</span></td>
+      </tr>
+      <tr>
+        <td style="font-size:xx-large">xx-large</td>
+        <td><span class = htmltag>font-size:xx-large</span></td>
+      </tr>
+    </table>
+
+    <h4>Text Location</h4>
+    <p>The <span class="htmltag">text-align</span> attribute governs where in the block the text is located. These can be set using key words:</p>
+    <table style="text-align:center; border-collapse: collapse;table-layout: fixed;width:400px; margin-left:500px">
+        <tr>
+          <th style=background:#F5F5F5>Justification </th>
+          <th style=background:#F5F5F5>Attribute</th>
+        </tr>
+        <tr>
+          <td style="text-align:center">Centered</td>
+          <td><span class = htmltag>text-align:center</span></td>
+        </tr>
+        <tr>
+          <td style="text-align:left">Left</td>
+          <td><span class = htmltag>text-align:left</span></td>
+        </tr>
+        <tr>
+          <td style="text-align:right">Right</td>
+          <td><span class = htmltag>text-align:right</span></td>
+        </tr>
+        <tr>
+          <td style="text-align:justify">Justify <br> The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog.</td>
+          <td><span class = htmltag>text-align:justify</span></td>
+        </tr>
+    </table>
+
+    <h2>Styling with CSS</h2>
+
+    <p>CSS can control a lot of the webpage at once and can be applied to more than just fonts. There are three ways of defining CSS:</p>
+
+    <ol>
+      <li><strong>Inline:</strong> By using the style attribute in HTML elements. This is how we changed the fonts in the last section.</li>
+      <li><strong>Internal:</strong> Using <span class="htmltag"> &ltstyle&gt</span> elements in the <span class="htmltag">&lthead&gt</span>. There is an example of this at the top of the page.</li>
+      <li><strong>External:</strong> Using a CSS document. Useful if building or want to chagne an entire website easily. Not explored here.</li>
+    </ol>
+
+    <h3>Inline CSS</h3>
+    <p>The most common uses of inline CSS have previously been discussed. It is likely only to be used if making only one item different. If using a repeated style it is quicker and easier to define the elements of the CSS in the head. To change words within a paragraph use the <span class="htmltag">&ltspan&gt</span> tag. See examples in inline tag section.
+
+    <h3>Internal</h3>
+    <p>Internally defining the css for a section of text can be done in the head of the document. It can be used to define all pargraphs or headings for the document:</p>
+    <div class="codeexample">
+      &lt!DOCTYPE html&gt <br>
+      &lthtml&gt <br>
+      &nbsp &lthead&gt <br>
+      &nbsp &nbsp &lttitle&gt <span class="htmltext">Defining in Style!</span> &lt/title&gt <br>
+      &nbsp &lt/head&gt <br>
+      &nbsp &ltstyle&gt <br>
+      &nbsp &nbsp body<span class="htmltext">{background-color:blue}</span> <br>
+      &nbsp &nbsp h1<span class="htmltext">{color:red; font-size:x-large}</span> <br>
+      &nbsp &nbsp p<span class="htmltext">{font-family:Comic Sans MS; color:red}</span> <br>
+      &nbsp &lt/style&gt <br>
+      &lt/html&gt
+    </div>
+    <br><br>
+
+    <div style="background:blue;color:red; padding:10px;
+    margin:auto;
+    width:55%;
+    border:1px solid black">
+      <h1 style="font-size:x-large"> Extra Large Heading</h1>
+      <p style="font-family:Comic Sans MS"> Stupid font paragraph.</p>
+    </div>
+
+    <p>Classes can also be defined generically so that different styles can be used in differnet places. For example the code sections were produced using the style below. .htmltag is used when defining tags in a scentence like this <span class="htmltag">&ltp&gt</span>. The .codeexample looks very similar but has margins and borders. It's for using in sections like the examples above and below where the text is standalone from a paragraph. The .htmltag version, is not strictly necessary. It is used for text in code which are not tags or attributes. This could be defined by inheriting all but the colour from the parent or as style like in the example.</p>
+
+    <div class=codeexample>
+      &lt!DOCTYPE html&gt <br>
+      &lthtml&gt <br>
+      &nbsp &lthead&gt <br>
+      &nbsp &nbsp &lttitle&gt <span class="htmltext">Code Styles!</span> &lt/title&gt <br>
+      &nbsp &lt/head&gt <br>
+      &nbsp &ltstyle&gt <br>
+      &nbsp &nbsp <span class="htmltext">.htmltag{</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">color: mediumblue;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">font-family: courier;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">background-color: #F5F5F5;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">}</span> <br>
+      &nbsp &nbsp <span class="htmltext">.htmltext{</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">color: black;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">font-family: courier;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">background-color: #F5F5F5;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">}</span> <br>
+      &nbsp &nbsp <span class="htmltext">.codeexample{</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">color: mediumblue;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">font-family: courier;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">background-color: #F5F5F5;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">padding: 10px;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">margin: auto;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">width: 55%;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">border: 1px solid blac;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">width: 55%;</span> <br>
+      &nbsp &nbsp &nbsp <span class="htmltext">}</span> <br>
+      &nbsp &lt/style&gt <br>
+      &lt/html&gt
+    </div>
+
+    <h4>Inline and Block Elements</h4>
+    <p>Elements can take on a seperate style from their parent. These are either block or inline. Inline start on the same line and only take the space of the text <span style="font-family:courier;color:blue;border:1px dashed blue">like this</span>. Whereas block elements start on a new line and take the width of the page by default.</p><div style="font-family:courier;color:blue; border:1px dashed blue">like this</div>
+
+    <h3>Inline tags</h3>
+    <p>All the html text elements mentioned previously are inline tags. Some more inline elements include:</p>
+
+    <table class = 'center'>
+      <tr>
+        <th style=background:#F5F5F5>Tag</th>
+        <th style=background:#F5F5F5>Function</th>
+        <th style=background:#F5F5F5>Example Code</th>
+        <th style=background:#F5F5F5>Example Result</th>
+      </tr>
+      <tr>
+        <td><span class="htmltag">&ltspan&gt</span></td>
+        <td>Has no required attributes. Functions as a container with CSS to style parts of text, with <span class="htmltag">style</span>, <span class="htmltag">class</span> or <span class="htmltag">id</span>.</td>
+        <td> <span class="htmltag"> &ltp&gt <span class="htmltext"> The code is like </span> &ltspan style="htmltag"&gt <span class="htmltext"> &ltp&gt</span> &lt/span&gt<span class="htmltext">.</span>&lt/p&gt</span>
+        <td> The code is like <span class="htmltag">&ltp&gt</span>.</td>
+      </tr>
+      <tr>
+        <td><span class="htmltag">&lta&gt</span></td>
+        <td>Defines a hyperlink, used to link one page with another. <span class="htmltag">target</span> can be set to <span class="htmltag">_blank</span> to open link in a new tab.</td>
+        <td><span class="htmltag"> &ltp&gt <span class="htmltext">To see more </span> &lta "href="www.webadress.com"&gt click here&lt/a&gt<span class="htmltext">!</span>&lt/p&gt</span></td>
+        <td>To see more <a href="www.github.com" target="_blank">click here</a>!</td>
+      </tr>
+      <tr>
+        <td><span class="htmltag"> &ltcite&gt</span></td>
+        <td>cite the title of work (e.g. book, song show etc.)</td>
+        <td><span class="htmltag"> &ltp&gt &ltcite&gt<span class="htmltext">Doctor Who</span>&lt/cite&gt <span class="htmltext">produced by the BBC.</span>&lt/p&gt</span></td>
+        <td><cite>Doctor Who</cite> produced by the BBC.</td>
+      </tr>
+      <tr>
+        <td><span class="htmltag">&ltimg&gt</span></td>
+        <td>Holds a reference for the input image location. Requires a <span class="htmltag">source</span> for the image and a <span class="htmltag">alt</span> of text if image is unavailable.</td>
+        <td><span class="htmltag"> &ltimg&gt src = "./duck.jpg" alt = "A duck picture." width = 50px&gt</span></td>
+        <td><img src="./duck.jpg" alt="A duck picture" width = 50px ></td>
+      </tr>
+      <tr>
+        <td><span class="htmltag">&ltbr&gt</span></td>
+        <td> Inserts a single line break. Is an empty tag, with no end tag.</td>
+        <td> <span class="htmltag">&ltp&gt <span class="htmltext">I want a new</span> &ltbr&gt <span class="htmltext">line.</span> &lt/p&gt</span></td>
+        <td> I want a new <br> line.</td>
+      </tr>
+      <tr>
+        <td><span class="htmltag">&ltinput&gt</span></td>
+        <td>Used within a form element to declare input controls for users to input data. A short example is here a fuller example is further down the page.</td>
+        <td> <span class="htmltag"> &ltinput type="text name="fname&gt</span></td>
+        <td><input type="text" name="fname"></td>
+      </tr>
+      <tr>
+        <td> <span class="htmltag"> &ltobject&gt</span></td>
+        <td>Embeds a object within the HTML document. (e.g. audio, video, java applets, ActiveX, PDF, Flash)</td>
+        <td> <span class="htmltag"> &ltobject width = 50px height = 50px data="helloworld.swf&gt&lt/object&gt"</span></td>
+        <td><object data=https://www.youtube.com/embed/eSLe4HuKuK0"> </object></td>
+      </tr>
+      <tr>
+        <td> <span class="htmltag"> &ltscript&gt</span></td>
+        <td>For inserting client-side JavaScript</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td> <span class="htmltag"> &ltbutton&gt</span></td>
+        <td> Defines a clickable button. Can put elements inside. Are often styled with <a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_css" target="_blank">CSS</a>.</td>
+        <td> <span class="htmltag"> &ltbutton type="button"&gt<span class="htmltext">ClickMe!</span>&lt/button&gt</span></td>
+        <td><button type="button" name="button">Click Me!</button></td>
+      </tr>
+      <tr>
+        <td> <span class="htmltag"> &ltoutput&gt</span></td>
+        <td>Represents the result of a calculation, for example something performed in a script. See example in section on forms.</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td> <span class="htmltag">&ltselect&gt</span></td>
+        <td>Creates a drop down list with 4 options. See example in section on forms.</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <p><small><strong>TIP</strong> To link a image to another page nest the <span class="htmltag"> &ltimg&gt</span> tag in the <span class="htmltag"> &lta&gt</span> tags. ><a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_image_link" target="_blank"><img src="./duck.jpg" alt="Duck Pic" width = 25px></a> <br>
+      <strong>TIP</strong> <span class="htmltag"> &ltmap&gt</span> can be used to map links to specific areas in an image. <a href="https://www.w3schools.com/tags/tag_map.asp" target="_blank">Like this</a>.</small></p>
+
+    <h4>Background Color</h4>
+
+    <p>The background color attribute is defined in a similar way to the color attribute. The attribute <span class="htmltag">background-color</span> can be set using words or hex codes. A image can also be used as the background for a block. See the block section for a more in depth description of how background images can be positioned. Example color, hex and image code is shown below.</p>
+
+    <h2>Tables</h2>
+
+    <h3>HTML Table Construction</h3>
+
+    <p>The <span class="htmltag"> &lttable&gt</span> tag is used to put data within a table. Each row is sperated by the <span class="htmltag">&lttr&gt</span> tag. The data in each cell in the row is defined with the <span class="htmltag"> &lttd&gt</span>, any headings in the table use the <span class="htmltag"> &ltth&gt</span> tag. <br> This table:</p>
+
+    <table class = 'center'>
+      <tr>
+        <th>Heading Col 1 Row 1</th>
+        <th>Heading Col 2 Row 2</th>
+        <th>Heading Col 3 Row 3</th>
+        <th>Heading Col 3 Row 3</th>
+      </tr>
+      <tr>
+        <th>Heading Col 1 Row 2</th>
+        <td>Data Col 2 Row 2</td>
+        <td>Data Col 3 Row 2</td>
+        <td>Data Col 4 Row 2</td>
+      </tr>
+      <tr>
+        <th>Heading Col 1 Row 3</th>
+        <td>Data Col 2 Row 3</td>
+        <td>Data Col 3 Row 3</td>
+        <td>Data Col 4 Row 3</td>
+      </tr>
+    </table>
+
+    <p>Is produced using this code:</p>
+
+     <div class = codeexample>
+       &lttable&gt <br>
+       &nbsp &lttr&gt <br>
+       &nbsp &nbsp &ltth&gt<span class="htmltext">Heading Col 1 Row 1</span>&lt/th&gt <br>
+       &nbsp &nbsp &ltth&gt<span class="htmltext">Heading Col 2 Row 1</span>&lt/th&gt <br>
+       &nbsp &nbsp &ltth&gt<span class="htmltext">Heading Col 3 Row 1</span>&lt/th&gt <br>
+       &nbsp &nbsp &ltth&gt<span class="htmltext">Heading Col 4 Row 1</span>&lt/th&gt <br>
+       &nbsp &lt/tr&gt <br>
+       &nbsp &lttr&gt <br>
+       &nbsp &nbsp &ltth&gt<span class="htmltext">Heading Col 1 Row 2</span>&lt/th&gt <br>
+       &nbsp &nbsp &lttd&gt<span class="htmltext">Data Col 2 Row 2</span>&lt/td&gt <br>
+       &nbsp &nbsp &lttd&gt<span class="htmltext">Data Col 3 Row 2</span>&lt/td&gt <br>
+       &nbsp &nbsp &lttd&gt<span class="htmltext">Data Col 4 Row 2</span>&lt/td&gt <br>
+       &nbsp &lt/tr&gt <br>
+       &nbsp &lttr&gt <br>
+       &nbsp &nbsp &ltth&gt<span class="htmltext">Heading Col 1 Row 3</span>&lt/th&gt <br>
+       &nbsp &nbsp &lttd&gt<span class="htmltext">Data Col 2 Row 3</span>&lt/td&gt <br>
+       &nbsp &nbsp &lttd&gt<span class="htmltext">Data Col 3 Row 3</span>&lt/td&gt <br>
+       &nbsp &nbsp &lttd&gt<span class="htmltext">Data Col 4 Row 3</span>&lt/td&gt <br>
+       &nbsp &lt/tr&gt <br>
+       &lt/table&gt
+     </div>
+  </body>
+</html>
