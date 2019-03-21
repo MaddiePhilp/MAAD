@@ -1,78 +1,162 @@
-<!DOCTYPE html>
+<!--DOCTYPE html-->
 <html>
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="style5copy.css">
-<style type="text/css">
-		body{background-color: moccasin; background-repeat:repeat; background-position:center; background-size:cover;}
-</style>
+  <!link to bootstrap - copied from boot strap website instead of code first slides>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!link to stylesheet>
+  <style type="text/css">
+  		body{background-color: moccasin; background-repeat:repeat; background-position:center; background-size:cover;}
+  </style>
   <title>Women Magazine</title>
-  <h1>Weekly news from women to women!</h1>
 </head>
 
 <body>
+  <!NavBar>
+  <!defines styles and colours for navbar>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <!Image and website name>
+    <a class="navbar-brand" href="#">
+      <img src="img/Test_NavBarImage.png" width="30" height="30" alt="" class="d-inline-block align-top">
+      Womens Magazine
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!Contents of Nav Bar>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Most Recent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AboutUs.html">About Us</a>
+        </li>
+        <!contents of drop down>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Topics
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Craft</a>
+          <a class="dropdown-item" href="#">Cooking</a>
+          <a class="dropdown-item" href="#">Careers</a>
+          <a class="dropdown-item" href="#">DIY</a>
+          <a class="dropdown-item" href="#">News</a>
+          <a class="dropdown-item" href="#">Fashion</a>
+        </li>
+      </ul>
+      <!search bar>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!end of nav bar>
 
-<div id="sidebar">
-  <h2>News flow</h2>
-  <ul class="nav">
-    <li>
-      <a href="https://www.bbc.co.uk/">BBC News</a>
-    </li>
-    <li>
-      <a href="https://edition.cnn.com/">CNN News</a>
-    </li>
-  </ul>
-</div>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="btn">
-<button type="button" class="btn-weeklynews">Weekly news</button>
-<button type="button" class="btn-diy">DIY</button>
-<button type="button" class="btn-products">Products</button>
-<button type="button" class="btn-info">More Info</button>
-<button type="button" class="btn-link">Useful Links</button>
-<button type="button" class="btn-contactus">Contact Us</button>
+<!--Carosel-->
+  <div id="demo" class="carousel slide" data-ride="carousel">
 
-<a class="btn btn-primary btn-lg" href="http://www.skippingrockslab.com/ooho!.html" role="button">Link</a>
-<button class="btn btn-primary btn-lg" type="submit">Button</button>
-<input class="btn btn-primary btn-lg" type="button" value="Input">
-<input class="btn btn-primary btn-lg" type="submit" value="Submit">
-<input class="btn btn-primary btn-lg" type="reset" value="Reset">
-</div>
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+    </ul>
 
-    <div class="slider">
-        <figure>
-
-        <div class="slide">
-        <p>Ooho!</p>
-        <!>Edible water with seaweed-extraxt packaging. Protect the environment!
-            <img src="img/Ooho.jpg">
+    <!-- The slideshow -->
+    <!--change height and width to change how large images display-->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/Ooho.jpg" alt="" height = 700 width = max>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ooho!</h5>
         </div>
-
-        <div class="slide">
-        <p>Prepare yourself for summer!</p>
-            <img src="img/summer-vacation.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/summer-vacation.jpg" alt="" height = 700 width = 2000>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Prepare yourself for summer!</h5>
         </div>
-
-        <div class="slide">
-        <p>Plants affect you more than you would imagine!</p>
-            <img src="img/download.jpeg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/download.jpeg" alt="" height = 700 width = max>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Plants affect you more than you would imagine!</h5>
         </div>
-
-        <div class="slide">
-        <p>DIY!</p>
-            <img src="img/home-diy.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="img/home-diy.jpg" alt="" height = 700 width = 2000>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>DIY!</h5>
         </div>
-
-        <div class="slide">
-        <p>Slide Five!</p>
-            <img src="img/Hero_Product.jpg">
-        </div>
-
-</figure>
-        </div>
-
+      </div>
     </div>
 
-<p class="center">Is this visible? Why am I limited?</p>
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+  <!-- The social media icon bar -->
+  <!--Display is controlled by the CSS file-->
+  <div class="icon-bar">
+    <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.twitter.com/login?lang=en-gb" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="http://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+    <a href="http://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a>
+    <a href="http://www.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  </div>
+<!--jumbotron test example-->
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome!</h1>
+    <p class="lead">Don't know if we want to put something like this here to talk a bit about the site.</p>
+    <hr class="my-4">
+    <p>Could have some links at the bottom, just a idea feel free to remove! </p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">About Us</a>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Most Viewed Article</a>
+  </div>
+
+  <!--script for nav bar drop down menu -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!--script for search bar in nav bar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <!--script for carosel-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <!--script for social buttons-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
+
+<body>
+<h2>The usefulness of plants and why you should have them.</h2>
+<p1>We often associate plants as green and nature. Let's have a deeper look at their effect. Color psychology suggests that different colors can evoke psychological reactions, often thought to have an impact on moods and emotions.</p1><br>
+<p2>How does the color green make you feel? For many people it has strong associations with nature and immediately brings to mind the lush green of grass, trees, and forests, it is often described as a refreshing and tranquil color.</p2><br>
+
+<h3>The Color Psychology of Green</h3>
+Green is a cool color that symbolizes nature and the natural world.
+Green also represents tranquility, good luck, health, and jealousy.
+Researchers have also found that green can improve reading ability. Some students may find that laying a transparent sheet of green paper over reading material increases reading speed and comprehension.
+Green has long been a symbol of fertility and was once the preferred color choice for wedding gowns in the 15th-century. Even today, green M & M's (an American chocolate candy) are said to send a sexual message.
+Green is often used in decorating for its calming effect.
+Green is thought to relieve stress and help heal. Those who have a green work environment experience fewer stomachaches.
+While some find green a relaxing color, others find that it gives them a feeling of excitement. This can be especially true of particularly vibrant shades of green. Although green plants has calming and relaxing effects on most of us, the light intensity of other colors have effect on the way you feel so does colorful flowers. </p><br>
+<h4>Here are a few colors and the corresponding impacts they have on the brain:</h4>
+    <li>Dark Blue – associated with night, often leads to passivity</li>
+    <li>Blue and Green – calming – blue is the most preferred color across cultures</li>
+    <li>Red and Orange – arousing</li>
+    <li>Red – may stimulate excitement and is used to light gambling casinos</li>
+    <li>Pink – interestingly calmed inmates in institutions</li>
 </body>
 </html>
