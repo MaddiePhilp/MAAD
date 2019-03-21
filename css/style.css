@@ -1,14 +1,37 @@
-		body{background:/home/nani/Documents/coding_course/img/orchid.png; background-repeat:repeat; background-position:center; background-size:cover;}
-		h1{background: navajowhite; border:5px solid darkgoldenrod; margin:100px; text-align:center; color:tomato; font-size:500%; font-family: arial, sans-serif; width:70%; background-position:center;}
-		h2{color:yellow; font-size:50px; background: bisque; font-size:50px; font-family:arial; color:salmon; text-align: center; margin: 100px; border: 3px solid olive; width:50%;}
-		li{color:orange; text-align:center;}
-		table{border-collapse: collapse; table-layout:fixed; width:200px; text-align:center;}
-		th{background-color: seagreen; color:white; text-align:center;}
-		table, th, td {color:orange; border:1px solid lavender; text-align:center;}
-		a:link,
-		a:visited{color:darkorchid;}
-		a:hover{color:cyan;}
-		a:active{background: navy; color: white;}
-        div.welsh{color:aqua; background-color:green; margin: 2em; border:thin orange solid; width:20%; font-size: 150%;}
-        li{list-style-type: none;}
-        ul li:before{content: 'hi \2022';}
+.icon-bar {
+position: fixed;
+top: 50%;
+-webkit-transform: translate(-50%);
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+display: block;
+text-align: center;
+padding: 16px;
+transition: all 0.3s ease;
+color: white;
+font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+background-color: #000;
+}
+
+.facebook {
+background: #3B5998;
+color: white;
+}
+
+.twitter {
+background: #55ACEE;
+color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
