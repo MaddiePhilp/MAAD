@@ -1,17 +1,3 @@
-.body{background-color: moccasin; background-repeat:repeat; background-position:center; background-size:cover;}
-.icon-bar {
-position: fixed;
-top: 50%;
--webkit-transform: translate(-50%);
--ms-transform: translateY(-50%);
-transform: translateY(-50%);
-}
-
-/*_________Flex forms_____________*/
-form {
-  display: flex;
-  align-items: center; /* Vertical alignment */
-}
 /*
     DEMO STYLE
 */
@@ -79,8 +65,6 @@ a, a:hover, a:focus {
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
 }
-
-
 
 #sidebar.active {
     margin-left: -250px;
@@ -238,27 +222,26 @@ a.article, a.article:hover {
     }
 
 }
-/*____________Fade_______________*/
-#navbar {
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: block;
-  transition: top 0.3s;
+.modal-backdrop { display: none; } .modal { background: rgba(0,0,0,0.5); }
+.box-part{
+    background:#F8F8F8;
+    border-radius:0;
+    padding:60px 10px;
+    margin:30px 0px;
+}
+.box-site{
+    background:#F8F8F8;
+    border-radius:0;
+    padding:10px 5px;
+    margin:10px 0px;
+}
+.text{
+    margin:20px 0px;
 }
 
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 17px;
+.fa-cog{
+     color:#4183D7;
 }
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
+.left{
+  text-align: left;
 }
