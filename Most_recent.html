@@ -1,97 +1,219 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!link to bootstrap - copied from boot strap website instead of code first slides>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!link to stylesheet>
-  <style type="text/css">
-  		body{background-color: moccasin; background-repeat:repeat; background-position:center; background-size:cover;}
-  </style>
-  <title>About Us!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>MAAD with the Juice!</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-  <!NavBar>
-  <!defines styles and colours for navbar>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <!Image and website name>
-    <a class="navbar-brand" href="#">
-      <img src="img/Test_NavBarImage.png" width="30" height="30" alt="" class="d-inline-block align-top">
-      Womens Magazine
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!Contents of Nav Bar>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index5copy.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Most Recent</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
-        </li>
-        <!contents of drop down>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Topics
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Craft</a>
-          <a class="dropdown-item" href="#">Cooking</a>
-          <a class="dropdown-item" href="#">Careers</a>
-          <a class="dropdown-item" href="#">DIY</a>
-          <a class="dropdown-item" href="#">News</a>
-          <a class="dropdown-item" href="#">Fashion</a>
-        </li>
-      </ul>
-      <!search bar>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+          <div class = "sticky-top">
+            <ul class="list-unstyled components">
+                <li>
+                  <a href="index.html">
+                      <i class="fas fa-home"></i>
+                      Home
+                  </a>
+                </li>
+                <li>
+                    <a href="Most_recent.html">
+                        <i class="fas fa-briefcase"></i>
+                        Most Recent
+                    </a>
+                    <a href="AboutUs.html">
+                        <i class="fas fa-briefcase"></i>
+                        About Us
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Topics
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="Careers.html">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">Style</a>
+                        </li>
+                        <li>
+                            <a href="#">DIY</a>
+                        </li>
+                        <li>
+                            <a href="News.html">News</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="SocialLinks.html">
+                        <i class="fas fa-paper-plane"></i>
+                        Social
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+              <!--change to buttons for email sign up then have that in pop up-->
+                <li>
+                  <button type="button" class="btn block" data-toggle="modal" data-target="#emailform">
+                    Newsletter
+                  </button>
+                </li>
+                <br>
+                <li>
+                  <button type="button" class="btn" data-toggle="modal" data-target="#contactform">
+                    Contact Form
+                  </button>
+                </li>
+            </ul>
+            </div>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+          <!-- Email Sign up Modal -->
+          <div class="modal fade" id="emailform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backgrop = "false">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Sign up for our weeky Newsletter!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit" class="btn btn-success">
+                      <i class="fas fa-check-circle"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Contact Form Modal -->
+          <div class="modal fade" id="contactform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backgrop = "false">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-center">
+                  <form action="action_page.php">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+                    <input type="email" id="fname" name="firstname" placeholder="Your email.."><br><br>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                      <option value="usa">UK</option>
+                    </select><br><br>
+                    <textarea id="subject" name="subject" placeholder="What would you like to contact us about?" style="height:200px"></textarea><br>
+
+                    <input type="submit" value="Submit"><br>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                      <img src="img/Test_NavBarImage.png" width="30" height="30" alt="" class="d-inline-block align-top">
+                      MAAD with the Juice!
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                          <form class="form-inline my-2 my-lg-0">
+                            <!--Search Box-->
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                          </form>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+              <div class = "row">
+                <div class="col">
+                  <div class="box-site text-center">
+                    <div class = "title">
+                      <h1> The friendilest places to visit this summer!</h1>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class = "row">
+              <div class = "col">
+                <div class="box-site text-center">
+                  <dt><a href="https://en.wikipedia.org/wiki/%C3%89vora">#1 The historic town of Evora, Portugal</a></dt>
+                  <dd>Short description of evora</dd>
+                  <img src="img/evora-portugal-2.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
+                  <img src="img/roman-diana-evora-temple.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
+                  <dt><a href="https://en.wikipedia.org/wiki/Luzon">#2 The terraces rice paddies of Luzon, Philippines!</a></dt>
+                  <dd>Short description of luzon</dd>
+                  <img src="img/philipines.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
+                  <img src="img/philippines.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
+                  <dt><a href="https://en.wikipedia.org/wiki/Uganda">#3 The Maya ruins in Palenque, Mexico</a></dt>
+                  <dd>Short description of the ruins<a href="https://en.wikipedia.org/wiki/Palenque">Palenque</a></dd>
+                  <img src="img/Palenque.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
+                  <img src="img/palenque.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
+                  <dt><a href="https://en.wikipedia.org/wiki/Uganda">#4 The mountain of gorilla sanctuary Bwindi Impenetrable National Park, Uganda</a></dt>
+                  <dd>Short description of bwindi national park <a href="https://www.bwindinationalparkuganda.com">Bwindi National Park websie</a></dd>
+                  <img src="img/giraff.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
+                  <img src="img/uganda-road.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
+                </dl>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </nav>
-    <!--end of nav bar-->
-<!--script for nav bar drop down menu -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<!--script for search bar in nav bar -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<!--script for carosel-->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-
-<h3>The friendilest places to visit this summer!</h3><br>
-    <div class="friendlies-places">
-        <dl>
-        <dt><a href="https://en.wikipedia.org/wiki/%C3%89vora">#1 The historic town of Evora, Portugal</a></dt>
-        <dd>Short description of evora</dd>
-<img src="img/evora-portugal-2.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
-<img src="img/roman-diana-evora-temple.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
-
-        <dt><a href="https://en.wikipedia.org/wiki/Luzon">#2 The terraces rice paddies of Luzon, Philippines!</a></dt>
-        <dd>Short description of luzon</dd>
-<img src="img/philipines.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
-<img src="img/philippines.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
-
-        <dt><a href="https://en.wikipedia.org/wiki/Uganda">#3 The Maya ruins in Palenque, Mexico</a></dt>
-        <dd>Short description of the ruins <a href="<a href="https://en.wikipedia.org/wiki/Palenque">Palenque</a></dd>
-<img src="img/Palenque.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
-<img src="img/palenque.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
-
-        <dt><a href="https://en.wikipedia.org/wiki/Uganda">#4 The mountain of gorilla sanctuary Bwindi Impenetrable National Park, Uganda</a></dt>
-        <dd>Short description of bwindi national park <a href="<a href="https://www.bwindinationalparkuganda.com">Bwindi National Park websie</a></dd>
-<img src="img/giraff.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
-<img src="img/uganda-road.jpg" width="700" height="400" alt="" class="d-inline-block align-center">
-        </dl>
-    </div>
-
-
-
-
-</body>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+  </body>
 </html>
