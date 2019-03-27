@@ -1,91 +1,86 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>MAAD with the Juice!</title>
+        <title>MAAD with the Juice!</title>
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
 
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
-</head>
+    </head>
 
-<body>
-
-
-    <div class="wrapper">
-        <!-- Sidebar Holder -->
-        <nav id="sidebar">
-          <div class = "sticky-top">
-            <ul class="list-unstyled components">
-                <li>
-                  <a href="index.html">
-                      <i class="fas fa-home"></i>
-                      Home
-                  </a>
-                </li>
-                <li>
-                    <a href="Most_recent.html">
-                        <i class="fas fa-briefcase"></i>
-                        Most Recent
-                    </a>
-                    <a href="AboutUs.html">
-                        <i class="fas fa-briefcase"></i>
-                        About Us
-                    </a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-copy"></i>
-                        Topics
-                    </a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="Careers.html">Careers</a>
-                        </li>
-                        <li>
-                            <a href="#">Style</a>
-                        </li>
-                        <li>
-                            <a href="#">DIY</a>
-                        </li>
-                        <li>
-                            <a href="News.html">News</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="SocialLinks.html">
-                        <i class="fas fa-paper-plane"></i>
-                        Social
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-              <!--change to buttons for email sign up then have that in pop up-->
-                <li>
-                  <button type="button" class="btn block" data-toggle="modal" data-target="#emailform">
-                    Newsletter
-                  </button>
-                </li>
-                <br>
-                <li>
-                  <button type="button" class="btn" data-toggle="modal" data-target="#contactform">
-                    Contact Form
-                  </button>
-                </li>
-            </ul>
+    <body>
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+              <div class = "sticky-top">
+                <ul class="list-unstyled components">
+                    <li>
+                      <a href="index.html">
+                          <i class="fas fa-home"></i>
+                          Home
+                      </a>  
+                    </li>
+                    <li>
+                        <a href="Most_recent.html">
+                            <i class="fas fa-briefcase"></i>
+                            Most Recent
+                        </a>
+                        <a href="AboutUs.html">
+                            <i class="fas fa-briefcase"></i>
+                            About Us
+                        </a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-copy"></i>
+                            Topics
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a href="Careers.html">Careers</a>
+                            </li>
+                            <li>
+                                <a href="#">Style</a>
+                            </li>
+                            <li>
+                                <a href="#">DIY</a>
+                            </li>
+                            <li>
+                                <a href="News.html">News</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="SocialLinks.html">
+                            <i class="fas fa-paper-plane"></i>
+                            Social
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled CTAs">
+                    <li>
+                      <button type="button" class="btn block" data-toggle="modal" data-target="#emailform">
+                        Newsletter
+                      </button>
+                    </li>
+                    <br>
+                    <li>
+                      <button type="button" class="btn" data-toggle="modal" data-target="#contactform">
+                        Contact Form
+                      </button>
+                    </li>
+                </ul>
             </div>
         </nav>
-
         <!-- Page Content Holder -->
         <div id="content">
           <!-- Email Sign up Modal -->
@@ -109,7 +104,6 @@
               </div>
             </div>
           </div>
-
           <!--Contact Form Modal -->
           <div class="modal fade" id="contactform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backgrop = "false">
             <div class="modal-dialog" role="document">
@@ -126,18 +120,17 @@
                     <input type="email" id="fname" name="firstname" placeholder="Your email.."><br><br>
                     <label for="country">Country</label>
                     <select id="country" name="country">
-                      <option value="australia">Australia</option>
-                      <option value="canada">Canada</option>
-                      <option value="usa">USA</option>
-                      <option value="usa">UK</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="usa">UK</option>
                     </select><br><br>
-                    <textarea id="subject" name="subject" placeholder="What would you like to contact us about?" style="height:200px"></textarea><br>
-
-                    <input type="submit" value="Submit"><br>
+                    <textarea id="subject" name="subject" placeholder="What would you like to contact us about?" style="height:200px"></textarea><br>                        
+                    <input type="submit" value="Submit"><br>                  
                   </form>
                 </div>
               </div>
-            </div>
+             </div>
           </div>
           <!--Navbar-->
             <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
