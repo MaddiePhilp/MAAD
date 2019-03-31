@@ -3,10 +3,16 @@
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+/*--------------------------------------------------
+FIXED BACKGROUND IMAGE WITHIN THE BODY
+--------------------------------------------------*/
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    /*background: #fafafa;*/
+    background-image: url("https://images5.alphacoders.com/701/701733.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 p {
