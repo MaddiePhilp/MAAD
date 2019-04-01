@@ -9,10 +9,15 @@ FIXED BACKGROUND IMAGE WITHIN THE BODY
 
 body {
     font-family: 'Poppins', sans-serif;
+<<<<<<< HEAD
+
+=======
     /*background: #fafafa;*/
     background-image: url("https://images5.alphacoders.com/701/701733.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position; relative;
+>>>>>>> cfe186e11e84eca9dd949d64380887efd1323339
 }
 
 p {
@@ -61,6 +66,17 @@ a, a:hover, a:focus {
     width: 100%;
     align-items: stretch;
     perspective: 1500px;
+    background-image: url("https://images5.alphacoders.com/701/701733.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+}
+
+.wrapper::after{
+	
+    position; relative;
+
 }
 
 
