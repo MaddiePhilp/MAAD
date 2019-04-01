@@ -244,20 +244,32 @@
                             <br>
                             <br>
                             <span>MAAD with the juice, is dedicated to documenting the issues <strong>you</strong> care about. We're using the power of the internet to <strong>change our world.</strong> Our target audience are girls, women, mothers and all those that are keen learning and reading about interesting topics from a slightly different and unique perspective. We don't want to waste your time, check it out yourself!</span>
+                            <br>
+                            <br>
+                            <p> <span>Visitor Number: </span></p>
+                            <div id="counter" ></div>
+                            <script>
+                              var n = localStorage.getItem('on_load_counter');
+
+                              if (n === null) {
+                                  n = 0;
+                              }
+
+                              n++;
+
+                              localStorage.setItem("on_load_counter", n);
+
+                              document.getElementById('counter').innerHTML = n;
+                              </script>
+                              <br>
+                              <br>
+                              <!--background music-->
+                              <audio src="Lizzo_Juice.mp3" controls>
+                                 <p>If you are reading this, it is because your browser does not support the audio element.</p>
+                              </audio>
                           </div>
                         </div>
                     </div>
-                </div>
-                <div class = "row">
-                  <div class = "col">
-                    <div class = 'box-site'>
-                      <div class = 'text'>
-                        <!--background music-->
-                        <audio src="Lizzo_Juice.mp3" controls>
-                           <p>If you are reading this, it is because your browser does not support the audio element.</p>
-                        </audio>
-                      </div>
-                  </div>
                 </div>
               </div>
             </div>
