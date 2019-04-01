@@ -10,9 +10,8 @@ FIXED BACKGROUND IMAGE WITHIN THE BODY
 body {
     font-family: 'Poppins', sans-serif;
     /*background: #fafafa;*/
-    background-image: url("https://images5.alphacoders.com/701/701733.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    
+    
 }
 
 p {
@@ -61,6 +60,13 @@ a, a:hover, a:focus {
     width: 100%;
     align-items: stretch;
     perspective: 1500px;
+    background-image: url("https://images5.alphacoders.com/701/701733.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    background-size: cover;
+    height: 100%
+    width: 100%;
 }
 
 
@@ -71,16 +77,19 @@ a, a:hover, a:focus {
     color: #fff;
     transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
     transform-origin: bottom left;
+    opacity: 0.95;
 }
 
 #sidebar.active {
     margin-left: -250px;
     transform: rotateY(100deg);
+    opacity: 0.95;
 }
 
 #sidebar .sidebar-header {
     padding: 20px;
     background: #6d7fcc;
+    opacity: 0.95;
 }
 
 #sidebar ul.components {
@@ -159,6 +168,7 @@ a.article, a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+    opacity: 0.95;
 }
 
 #sidebarCollapse {
