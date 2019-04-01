@@ -3,10 +3,17 @@
 */
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
+/*--------------------------------------------------
+FIXED BACKGROUND IMAGE WITHIN THE BODY
+--------------------------------------------------*/
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    /*background: #fafafa;*/
+    background-image: url("https://images5.alphacoders.com/701/701733.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position; relative;
 }
 
 p {
@@ -15,6 +22,7 @@ p {
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
+    
 }
 
 a, a:hover, a:focus {
@@ -260,4 +268,20 @@ tr:hover {background-color: #f5f5f5;}
 
 .avatar{
   border-radius:50%
+}
+.videocontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centertext {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 50%;
+  padding: 20px;
+  text-align; center;
 }
