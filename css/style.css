@@ -10,7 +10,6 @@ FIXED BACKGROUND IMAGE WITHIN THE BODY
 body {
     font-family: 'Poppins', sans-serif;
     /*background: #fafafa;*/
-    
 }
 
 p {
@@ -19,7 +18,7 @@ p {
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
-    
+
 }
 
 a, a:hover, a:focus {
@@ -64,7 +63,6 @@ a, a:hover, a:focus {
     background-attachment: fixed;
     position; relative;
 
-    
 }
 
 
