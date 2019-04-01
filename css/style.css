@@ -73,12 +73,6 @@ a, a:hover, a:focus {
     
 }
 
-.wrapper::after{
-	
-    position; relative;
-
-}
-
 
 #sidebar {
     min-width: 250px;
