@@ -20,10 +20,20 @@
     </head>
 
     <body>
-        
-        <!--Video added as a header! More videos in the img folder-->
-        <iframe src="img/typing.mp4" width=1590 height=880 allow=accelerometer allow=autoplay allow=encrypted-media allow=gyroscope></iframe>
+        <div class="container-flex" id ='divfade'>
+          <video autoplay loop muted id ='myVideo' >
+            <source src="img/typing.mp4" type="video/mp4">
+          </video>
+          <div class="centertext">
+            <div class="text-center">
+              <img src="img/lady.png" width="50" height="75" alt="" class="d-inline-block align-center">
+              <h1>MAAD with the Juice!</h1>
+              <br>
+              <button type="button" onclick="fadevideo" id='fadeoutbutton' class='btn block'><strong>Come and get MAAD!</strong></button>
+            </div>
 
+          </div>
+        </div>
         <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
@@ -259,13 +269,25 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
         <!-- Bootstrap JS -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript">
-            $(document).ready(function () {
+            $(document).ready(function ($) {
                 $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar').toggleClass('active');
-                    $(this).toggleClass('active');
+                  $('#sidebar').toggleClass('active');
+                  $(this).toggleClass('active');
                 });
-            });
+                });
+
+
         </script>
+        <script type="text/javascript">
+        $(document).ready(function ($) {
+        $('#fadeoutbutton').on('click',function(event){
+          $('#divfade').hide(500);
+          $('#Content').pause(500).fadeIn(500);
+          });
+        });
+        </script>
+
     </body>
 </html>
