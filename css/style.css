@@ -304,7 +304,6 @@ tr:hover {background-color: #f5f5f5;}
 
 .question {
     font-size: 1.5em;
-	font-weight:bold;
     width: 100%;
     height: auto;
     margin: auto;
@@ -324,7 +323,7 @@ tr:hover {background-color: #f5f5f5;}
 	font-weight:bold;
     color: white;
 	position:absolute;
-	top:80%;
+	top:50%;
 	left:40%;
 }
 .choiceList {
@@ -342,7 +341,7 @@ tr:hover {background-color: #f5f5f5;}
 	font-size:25px;
 	font-weight:bold;
 	position:absolute;
-	top:80%;
+	top:50%;
 	left:30%;
 }
 /* End of Quiz Classes */
