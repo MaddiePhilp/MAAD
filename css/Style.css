@@ -10,10 +10,7 @@ FIXED BACKGROUND IMAGE WITHIN THE BODY
 body {
     font-family: 'Poppins', sans-serif;
     /*background: #fafafa;*/
-    background-image: url("https://images5.alphacoders.com/701/701733.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position; relative;
+    
 }
 
 p {
@@ -62,6 +59,12 @@ a, a:hover, a:focus {
     width: 100%;
     align-items: stretch;
     perspective: 1500px;
+    background-image: url("https://images5.alphacoders.com/701/701733.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position; relative;
+
+    
 }
 
 

@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>MAAD with the Juice!</title>
+        <title>MAAD!</title>
+        <link rel="shortcut icon" href = 'img/lady.png' />
 
         <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -34,7 +35,7 @@
 
           </div>
         </div>
-        <div class="wrapper">
+        <div class="wrapper" id="ContentWrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class = "sticky-top">
@@ -48,12 +49,8 @@
                         </li>
                         <li>
                             <a href="Most_recent.html">
-                                <i class="fas fa-briefcase"></i>
+                                <i class="fas fa-plus-circle"></i>
                                 Most Recent
-                            </a>
-                            <a href="AboutUs.html">
-                                <i class="fas fa-briefcase"></i>
-                                About Us
                             </a>
                             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                                 <i class="fas fa-copy"></i>
@@ -62,16 +59,16 @@
                             <ul class="collapse list-unstyled" id="pageSubmenu">
                                 <!--sidebar drop down-->
                                 <li>
-                                    <a href="Careers.html">Careers</a>
+                                    <a href="Careers.html"><i class="fas fa-briefcase"></i> Careers</a>
                                 </li>
                                 <li>
-                                    <a href="Style.html">Style</a>
+                                    <a href="Style.html"><i class="fas fa-tshirt"></i> Style</a>
                                 </li>
                                 <li>
-                                    <a href="DIY.html">DIY</a>
+                                    <a href="DIY.html"><i class="fas fa-adjust"></i> DIY</a>
                                 </li>
                                 <li>
-                                    <a href="News.html">News</a>
+                                    <a href="News.html"><i class="fas fa-newspaper"></i> News</a>
                                 </li>
                             </ul>
                         </li>
@@ -79,6 +76,10 @@
                             <a href="SocialLinks.html">
                                 <i class="fas fa-paper-plane"></i>
                                 Social
+                            </a>
+                            <a href="AboutUs.html">
+                                <i class="fas fa-address-card"></i>
+                                About Us
                             </a>
                         </li>
                     </ul>
@@ -200,29 +201,29 @@
                             <!--change height and width to change how large images display-->
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img src="img/snail.png" alt="" height = 610 width = 1110>
+                                <a href="index.html"><img src="img/snail.png" alt="" height = 610 width = 1110></a>
                                 <div class="carousel-caption d-none d-md-block">
                                   <h5>We are all part of something bigger!</h5>
                                   <h5>Start using your power today!</h5>
                                 </div>
                               </div>
                               <div class="carousel-item">
-                                <img src="img/summer-vacation.jpg" alt="" height = 610 width = 1110>
+                                <a href = 'Most_recent.html'><img src="img/summer-vacation.jpg" alt="" height = 610 width = 1110></a>
                                 <div class="carousel-caption d-none d-md-block">
                                   <h5>Get ready for summer!</h5>
                                   <h5>Top #5 destinations in 2019</h5>
                                 </div>
                               </div>
                               <div class="carousel-item">
-                                <img src="img/download.jpeg" alt="" height = 610 width = 1110>
+                                <a href = 'News.html#Plant'><img src="img/download.jpeg" alt="" height = 610 width = 1110></a>
                                 <div class="carousel-caption d-none d-md-block">
                                   <h5>Plants affect you more than you would imagine!</h5>
                                 </div>
                               </div>
                               <div class="carousel-item">
-                                <img src="img/home-diy.jpg" alt="" height = 610 width = 1110>
+                                <a href 'DIY.html'><img src="img/home-diy.jpg" alt="" height = 610 width = 1110></a>
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>DIY!</h5>
+                                    <h5><span style = 'color:black'></span>DIY!</span></h5>
                                 </div>
                               </div>
                             </div>
@@ -244,20 +245,32 @@
                             <br>
                             <br>
                             <span>MAAD with the juice, is dedicated to documenting the issues <strong>you</strong> care about. We're using the power of the internet to <strong>change our world.</strong> Our target audience are girls, women, mothers and all those that are keen learning and reading about interesting topics from a slightly different and unique perspective. We don't want to waste your time, check it out yourself!</span>
+                            <br>
+                            <br>
+                            <p> <span>Visitor Number: </span></p>
+                            <div id="counter" ></div>
+                            <script>
+                              var n = localStorage.getItem('on_load_counter');
+
+                              if (n === null) {
+                                  n = 0;
+                              }
+
+                              n++;
+
+                              localStorage.setItem("on_load_counter", n);
+
+                              document.getElementById('counter').innerHTML = n;
+                              </script>
+                              <br>
+                              <br>
+                              <!--background music-->
+                              <audio src="Lizzo_Juice.mp3" controls>
+                                 <p>If you are reading this, it is because your browser does not support the audio element.</p>
+                              </audio>
                           </div>
                         </div>
                     </div>
-                </div>
-                <div class = "row">
-                  <div class = "col">
-                    <div class = 'box-site'>
-                      <div class = 'text'>
-                        <!--background music-->
-                        <audio src="Lizzo_Juice.mp3" controls>
-                           <p>If you are reading this, it is because your browser does not support the audio element.</p>
-                        </audio>
-                      </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -272,5 +285,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src='js/collapse_sidebar.js'></script>
         <script src='js/fade_homepage_video.js'></script>
+
     </body>
 </html>

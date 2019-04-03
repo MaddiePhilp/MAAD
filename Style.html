@@ -13,6 +13,9 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Font Awesome Source -->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -27,46 +30,47 @@
         <nav id="sidebar">
           <div class = "sticky-top">
             <ul class="list-unstyled components">
-                <li>
-                  <a href="index.html">
-                      <i class="fas fa-home"></i>
-                      Home
+              <li>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+              </li>
+              <li>
+                  <a href="Most_recent.html">
+                      <i class="fas fa-plus-circle"></i>
+                      Most Recent
                   </a>
-                </li>
-                <li>
-                    <a href="Most_recent.html">
-                        <i class="fas fa-briefcase"></i>
-                        Most Recent
-                    </a>
-                    <a href="AboutUs.html">
-                        <i class="fas fa-briefcase"></i>
-                        About Us
-                    </a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-copy"></i>
-                        Topics
-                    </a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="Careers.html">Careers</a>
-                        </li>
-                        <li>
-                            <a href="#">Style</a>
-                        </li>
-                        <li>
-                            <a href="DIY.html">DIY</a>
-                        </li>
-                        <li>
-                            <a href="News.html">News</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="SocialLinks.html">
-                        <i class="fas fa-paper-plane"></i>
-                        Social
-                    </a>
-                </li>
+                  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                      <i class="fas fa-copy"></i>
+                      Topics
+                  </a>
+                  <ul class="collapse list-unstyled" id="pageSubmenu">
+                      <!--sidebar drop down-->
+                      <li>
+                          <a href="Careers.html"><i class="fas fa-briefcase"></i> Careers</a>
+                      </li>
+                      <li>
+                          <a href="Style.html"><i class="fas fa-tshirt"></i> Style</a>
+                      </li>
+                      <li>
+                          <a href="DIY.html"><i class="fas fa-adjust"></i> DIY</a>
+                      </li>
+                      <li>
+                          <a href="News.html"><i class="fas fa-newspaper"></i> News</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="SocialLinks.html">
+                      <i class="fas fa-paper-plane"></i>
+                      Social
+                  </a>
+                  <a href="AboutUs.html">
+                      <i class="fas fa-address-card"></i>
+                      About Us
+                  </a>
+              </li>
             </ul>
 
             <ul class="list-unstyled CTAs">
@@ -171,14 +175,16 @@
                 <div class="col">
                   <div class="box-site text-center">
                     <div class = "title">
-                      <h1>All text and picture source needs to be edited by Debbie</h1>
+                      <h1>A NIGERIAN TRADITIONAL WEDDING </h1>
+                      <p> In Nigeria, a wedding is much more than the celebration of joining the lives of two people into one. It is when two entire families join together as one and a Nigerian wedding is an all-out affair that is full of bright colours, toe-tapping music, and ancient traditions. </p>
+                      <p> Nigerian couples often have two, or three weddings;the court wedding, a traditional/cultural wedding and a religious wedding. These ceremonies are held days and sometimes weeks apart.</p>
                     </div>
                   </div>
                 </div>
             </div>
             <!--Header Picture-->
             <div = class="row">
-              <img src="#" class="rounded mx-auto d-block">
+              <img src="img/Tara-Odunsi .jpg" class="rounded mx-auto d-block" height = 100% width = 100% >
             </div>
 
             <!--Listed places, Bar with links to further down page -->
@@ -186,64 +192,93 @@
               <div class = "col-md-3 col-lg-3 col-sm-12">
                   <div class = "box-site text-center sticky-top sticky-top-2">
                     <h4>Top 5 to check:</h4><br>
-                    <a href="#Style1">1st style</a><br><br>
-                    <a href="#Style2">2nd style</a><br><br>
-                    <a href="#Style3">3rd style</a><br><br>
-                    <a href="#Style4">4th style</a><br><br>
-                    <a href="#Style5">5th style</a><br><br>
+                    <div class="btn-group-vertical" >
+                      <button type="button" class="btn btn-outline-dark" style = 'display:inline-flex; white-space:normal'><a href="#Style1">The Gele /Headtie</a></button>
+                      <button type="button" class="btn btn-outline-dark" style = 'display:inline-flex; white-space:normal'><a href="#Style2">Corals / Bread</a></button>
+                      <button type="button" class="btn btn-outline-dark" style = 'display:inline-flex; white-space:normal'><a href="#Style3">Fabric</a></button>
+                      <button type="button" class="btn btn-outline-dark" style = 'display:inline-flex; white-space:normal'><a href="#Style4">4th style</a></button>
+                      <button type="button" class="btn btn-outline-dark" style = 'display:inline-flex; white-space:normal'><a href="#Style5">5th style</a></button>
+                    </div>
                   </div>
               </div>
               <div class = "col-md-9 col-lg-9 col-sm-12">
+
+<div>
                 <div class="box-site text-center">
-                  <dt><a href="#"><h1>#1 Style</h1></a></dt><br>
-                  <a name="Style1"></a>
-                  <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
+                  <h1> The Gele /Headtie </h1><br>
+                  <a name="The Gele/ Headtie"></a>
+                  <img src= "img/Pink gele .jpeg" width = "700" height="900" alt="" class="d-inline-block align-center">
                     <div class="box-site text-center">
-                        <dd align="justify">Description to add</dd>
-                    </div>
-                  <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
-                </div>
-                <div class="box-site text-center">
-                  <dt><a href="#"><h1>#2 Style</h1></a></dt><br>
-                  <a name='Style2'></a>
-                  <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
+                        <dd align="justify">Description to add</dd><br>
+<i onclick="myFunction(this)" class="fa fa-heart" color="red"></i>
+<i onclick="myFunction(this)" class="fa fa-thumbs-down" color="gold"></i>
+                    </div><br>
+                
+
+                
+                  <h1> Corals / Bread</h1><br>
+                  <a name="Coral/Beads"></a>
+                  <img src="img/corals .jpg" width="700" height="400" alt="" class="d-inline-block align-center">
+                  <img src="img/Adanna.jpeg" width="700" height="1100" alt="" class="d-inline-block align-center">
                     <div class="box-site text-center">
-                        <dd align="justify">Description to add</dd>
-                    </div>
-                  <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
-                </div>
-                <div class="box-site text-center">
-                  <dt><a href="#"><h1>#3 Style</h1></a></dt><br>
-                  <a name='Style3'></a>
-                  <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
+                        <dd align="justify">Description to add</dd><br>
+<i onclick="myFunction(this)" class="fa fa-heart" color="red"></i>
+<i onclick="myFunction(this)" class="fa fa-thumbs-down" color="gold"></i>
+                    </div><br>
+                
+
+                
+                  <h1>Fabric (Aso-oke/Lace/Ankara..)</h1><br>
+                  <a name='Fabric'></a>
+                  <img src="img/Linda-Ejiofor.jpeg" width="700" height="1100" alt="" class="d-inline-block align-center">
+                  <img src="img/Tara-Odunsi 2.jpeg" width="700" height="900" alt="" class="d-inline-block align-center">
+                  <img src="img/Ronke gele.jpg" width="700" height="1000" alt="" class="d-inline-block align-center">
                     <div class="box-site text-center">
-                        <dd align="justify">Descritption to add</dd>
-                    </div>
-                  <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
-                </div>
-                <div class="box-site text-center">
+                        <dd align="justify">Descritption to add</dd><br>
+<i onclick="myFunction(this)" class="fa fa-heart" color="red"></i>
+<i onclick="myFunction(this)" class="fa fa-thumbs-down" color="gold"></i>
+                    </div><br>
+                
+
+                
                   <dt><a href="#"><h1>#4 Style</h1></a></dt><br>
                   <a name='Style4'></a>
                   <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
                     <div class="box-site text-center">
-                        <dd align="justify">Description to add</dd>
-                    </div>
-                  <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
-                </div>
-                <div class="box-site text-center">
+                        <dd align="justify">Description to add</dd><br>
+<i onclick="myFunction(this)" class="fa fa-heart" color="red"></i>
+<i onclick="myFunction(this)" class="fa fa-thumbs-down" color="gold"></i>
+                    </div><br>
+                
+
+                
                   <dt><a href="#"><h1>#5 Style</h1></a></dt><br>
                   <a name='Style5'></a>
                   <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
                     <div class="box-site text-center">
-                        <dd align="justify">Description to add</dd>
-                        <a href="#"></a>
+                        <dd align="justify">Description to add</dd><br>
+<i onclick="myFunction(this)" class="fa fa-heart" color="red"></i>
+<i onclick="myFunction(this)" class="fa fa-thumbs-down" color="gold"></i>
                     </div>
-                  <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
+                </div>
+</div>
+
+                <div class="container" style="text-align:right">
+                  <h5>Share This Post</h5>
+                  <div class="social">
+                    <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
+                    <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
+                    <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
+                    <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
+                  </div>
+                                  </div>
                 </div>
                 <!--Video of how to sew a skirt-->
                 <div class="box-site text-center">
-                  <p>If you got some inspiration of just lack of it, check out our DIY section. Montoya Mayo helps you to make an Ankara half circle maxi length skirt with pockets.</p>
-                  <a href="DIY.html"><img src="img/fullskirt.jpg" width="500" height="750" alt="" class="d-inline-block align-center"></a>
+                  <p>If you got some inspiration or just lack of it, check out our DIY section. Montoya Mayo helps you make an Ankara half circle maxi length skirt with pockets.</p>
+                  <a href="DIY.html#SewYourOwnSkirt"><img src="img/fullskirt.jpg" width="500" height="750" alt="" class="d-inline-block align-center"></a><br>
+<i onclick="myFunction(this)" class="fa fa-heart" color="red"></i>
+<i onclick="myFunction(this)" class="fa fa-thumbs-down" color="gold"></i>
                 </div>
               </div>
             </div>
