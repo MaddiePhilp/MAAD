@@ -210,80 +210,242 @@
                   <img src= "img/Pink gele .jpeg" width = "700" height="900" alt="" class="d-inline-block align-center">
                     <div class="box-site text-center">
                         <dd align="justify">Description to add</dd><br>
-<i onclick="myFunction(this)" class="fa fa-heart" color="red"></i>
-<i onclick="myFunction(this)" class="fa fa-thumbs-down" color="gold"></i>
-                    </div><br>
-                
+                        <!--Like and dislikes scripts-->
+                        <script>
+                          function style1_likes() {
+                            if (typeof(Storage) !== "undefined") {
+                              if (localStorage.style1_likes_count) {
+                                localStorage.style1_likes_count = Number(localStorage.style1_likes_count)+1;
+                              } else {
+                                localStorage.style1_likes_count = 1;
+                              }
+                              document.getElementById("style1_likes_result").innerHTML =  localStorage.style1_likes_count + " Likes";
+                            } else {
+                              document.getElementById("style1_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                            }
+                          }
+                        </script>
+                        <script>
+                          function style1_dislikes() {
+                            if (typeof(Storage) !== "undefined") {
+                              if (localStorage.style1_dislikes_count) {
+                                localStorage.style1_dislikes_count = Number(localStorage.style1_dislikes_count)+1;
+                              } else {
+                                localStorage.style1_dislikes_count = 1;
+                              }
+                              document.getElementById("style1_dislikes_result").innerHTML =  localStorage.style2_dislikes_count + " Dislikes";
+                            } else {
+                              document.getElementById("style1_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                            }
+                          }
+                        </script>
+                        <!--Like and dislike buttons-->
+                        <br>
+                        <br>
+                        <i onclick="style1_likes()" class="fa fa-heart" color="red"></i>
+                        <span id="style1_likes_result"></span>
+                        <i onclick="style1_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                        <span id="style1_dislikes_result"></span>
 
-                
+                    </div><br>
+
+
+
                   <h1> Corals / Bread</h1><br>
                   <a name="Coral/Beads"></a>
                   <img src="img/corals .jpg" width="700" height="400" alt="" class="d-inline-block align-center">
                   <img src="img/Adanna.jpeg" width="700" height="1100" alt="" class="d-inline-block align-center">
-                    <div class="box-site text-center">
-                        <dd align="justify">Description to add</dd><br>
-<i onclick="myFunction(this)" class="fa fa-heart" color="red"></i>
-<i onclick="myFunction(this)" class="fa fa-thumbs-down" color="gold"></i>
-                    </div><br>
-                
-
-                
-                  <h1>Fabric (Aso-oke/Lace/Ankara..)</h1><br>
-                  <a name='Fabric'></a>
-                  <img src="img/Linda-Ejiofor.jpeg" width="700" height="1100" alt="" class="d-inline-block align-center">
-                  <img src="img/Tara-Odunsi 2.jpeg" width="700" height="900" alt="" class="d-inline-block align-center">
-                  <img src="img/Ronke gele.jpg" width="700" height="1000" alt="" class="d-inline-block align-center">
-                    <div class="box-site text-center">
-                        <dd align="justify">Descritption to add</dd><br>
-<i onclick="myFunction(this)" class="fa fa-heart" color="red"></i>
-<i onclick="myFunction(this)" class="fa fa-thumbs-down" color="gold"></i>
-                    </div><br>
-                
-
-                
-                  <dt><a href="#"><h1>#4 Style</h1></a></dt><br>
-                  <a name='Style4'></a>
-                  <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
-                    <div class="box-site text-center">
-                        <dd align="justify">Description to add</dd><br>
-<i onclick="myFunction(this)" class="fa fa-heart" color="red"></i>
-<i onclick="myFunction(this)" class="fa fa-thumbs-down" color="gold"></i>
-                    </div><br>
-                
-
-                
-                  <dt><a href="#"><h1>#5 Style</h1></a></dt><br>
-                  <a name='Style5'></a>
-                  <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
-                    <div class="box-site text-center">
-                        <dd align="justify">Description to add</dd><br>
-<i onclick="myFunction(this)" class="fa fa-heart" color="red"></i>
-<i onclick="myFunction(this)" class="fa fa-thumbs-down" color="gold"></i>
-                    </div>
+                  <div class="box-site text-center">
+                    <dd align="justify">Description to add</dd><br>
+                    <!--Like and dislikes scripts-->
+                    <script>
+                      function style2_likes() {
+                        if (typeof(Storage) !== "undefined") {
+                          if (localStorage.style2_likes_count) {
+                            localStorage.style2_likes_count = Number(localStorage.style2_likes_count)+1;
+                          } else {
+                            localStorage.style2_likes_count = 1;
+                          }
+                          document.getElementById("style2_likes_result").innerHTML =  localStorage.style2_likes_count + " Likes";
+                        } else {
+                          document.getElementById("style2_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                        }
+                      }
+                    </script>
+                    <script>
+                      function style2_dislikes() {
+                        if (typeof(Storage) !== "undefined") {
+                          if (localStorage.style2_dislikes_count) {
+                            localStorage.style2_dislikes_count = Number(localStorage.style2_dislikes_count)+1;
+                          } else {
+                            localStorage.style2_dislikes_count = 1;
+                          }
+                          document.getElementById("style2_dislikes_result").innerHTML =  localStorage.style2_dislikes_count + " Dislikes";
+                        } else {
+                          document.getElementById("style2_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                        }
+                      }
+                    </script>
+                    <!--Like and dislike buttons-->
+                    <br>
+                    <br>
+                    <i onclick="style2_likes()" class="fa fa-heart" color="red"></i>
+                    <span id="style2_likes_result"></span>
+                    <i onclick="style2_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                    <span id="style2_dislikes_result"></span>
                 </div>
-</div>
-
-                <div class="container" style="text-align:right">
-                  <h5>Share This Post</h5>
-                  <div class="social">
-                    <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
-                    <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
-                    <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
-                    <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
-                  </div>
-                                  </div>
-                </div>
-                <!--Video of how to sew a skirt-->
+                <br>
+                <h1>Fabric (Aso-oke/Lace/Ankara..)</h1><br>
+                <a name='Fabric'></a>
+                <img src="img/Linda-Ejiofor.jpeg" width="700" height="1100" alt="" class="d-inline-block align-center">
+                <img src="img/Tara-Odunsi 2.jpeg" width="700" height="900" alt="" class="d-inline-block align-center">
+                <img src="img/Ronke gele.jpg" width="700" height="1000" alt="" class="d-inline-block align-center">
                 <div class="box-site text-center">
-                  <p>If you got some inspiration or just lack of it, check out our DIY section. Montoya Mayo helps you make an Ankara half circle maxi length skirt with pockets.</p>
-                  <a href="DIY.html#SewYourOwnSkirt"><img src="img/fullskirt.jpg" width="500" height="750" alt="" class="d-inline-block align-center"></a><br>
-<i onclick="myFunction(this)" class="fa fa-heart" color="red"></i>
-<i onclick="myFunction(this)" class="fa fa-thumbs-down" color="gold"></i>
+                  <dd align="justify">Description to add</dd><br>
+                  <p style = 'text-centre: justify'> Description Text </p>
+                  <!--Like and dislikes scripts-->
+                  <script>
+                    function style3_likes() {
+                      if (typeof(Storage) !== "undefined") {
+                        if (localStorage.style3_likes_count) {
+                          localStorage.style3_likes_count = Number(localStorage.style3_likes_count)+1;
+                        } else {
+                          localStorage.style3_likes_count = 1;
+                        }
+                        document.getElementById("style3_likes_result").innerHTML =  localStorage.style3_likes_count + " Likes";
+                      } else {
+                        document.getElementById("style3_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                      }
+                    }
+                  </script>
+                  <script>
+                    function style3_dislikes() {
+                      if (typeof(Storage) !== "undefined") {
+                        if (localStorage.style3_dislikes_count) {
+                          localStorage.style3_dislikes_count = Number(localStorage.style3_dislikes_count)+1;
+                        } else {
+                          localStorage.style3_dislikes_count = 1;
+                        }
+                        document.getElementById("style3_dislikes_result").innerHTML =  localStorage.style3_dislikes_count + " Dislikes";
+                      } else {
+                        document.getElementById("style3_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                      }
+                    }
+                  </script>
+                  <!--Like and dislike buttons-->
+                  <br>
+                  <br>
+                  <i onclick="style3_likes()" class="fa fa-heart" color="red"></i>
+                  <span id="style3_likes_result"></span>
+                  <i onclick="style3_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                  <span id="style3_dislikes_result"></span>
+                </div>
+                <br>
+                <h1>#4 Style</h1>
+                <a name='Style4'></a>
+                <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
+                  <div class="box-site">
+                        <p style = 'text-centre: justify'> Description Text </p>
+                        <!--Like and dislikes scripts-->
+                        <script>
+                          function style4_likes() {
+                            if (typeof(Storage) !== "undefined") {
+                              if (localStorage.style4_likes_count) {
+                                localStorage.style4_likes_count = Number(localStorage.style4_likes_count)+1;
+                              } else {
+                                localStorage.style4_likes_count = 1;
+                              }
+                              document.getElementById("style4_likes_result").innerHTML =  localStorage.style4_likes_count + " Likes";
+                            } else {
+                              document.getElementById("style4_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                            }
+                          }
+                        </script>
+                        <script>
+                          function style4_dislikes() {
+                            if (typeof(Storage) !== "undefined") {
+                              if (localStorage.style4_dislikes_count) {
+                                localStorage.style4_dislikes_count = Number(localStorage.style4_dislikes_count)+1;
+                              } else {
+                                localStorage.style4_dislikes_count = 1;
+                              }
+                              document.getElementById("style4_dislikes_result").innerHTML =  localStorage.style4_dislikes_count + " Dislikes";
+                            } else {
+                              document.getElementById("style4_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                            }
+                          }
+                        </script>
+                        <!--Like and dislike buttons-->
+                        <br>
+                        <br>
+                        <i onclick="style4_likes()" class="fa fa-heart" color="red"></i>
+                        <span id="style4_likes_result"></span>
+                        <i onclick="style4_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                        <span id="style4_dislikes_result"></span>
+                    </div>
+                    <br>
+                    <h1>#5 Style</h1><br>
+                    <a name='Style5'></a>
+                    <img src="#" width="700" height="400" alt="" class="d-inline-block align-center">
+                      <div class="box-site text-center">
+                          <p> Descrition Text </p>
+                          <!--Like and dislikes scripts-->
+                          <script>
+                            function style5_likes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.style5_likes_count) {
+                                  localStorage.style5_likes_count = Number(localStorage.style5_likes_count)+1;
+                                } else {
+                                  localStorage.style5_likes_count = 1;
+                                }
+                                document.getElementById("style5_likes_result").innerHTML =  localStorage.style5_likes_count + " Likes";
+                              } else {
+                                document.getElementById("style5_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <script>
+                            function style5_dislikes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.style5_dislikes_count) {
+                                  localStorage.style5_dislikes_count = Number(localStorage.style5_dislikes_count)+1;
+                                } else {
+                                  localStorage.style5_dislikes_count = 1;
+                                }
+                                document.getElementById("style5_dislikes_result").innerHTML =  localStorage.style5_dislikes_count + " Dislikes";
+                              } else {
+                                document.getElementById("style5_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <!--Like and dislike buttons-->
+                          <br>
+                          <br>
+                          <i onclick="style5_likes()" class="fa fa-heart" color="red"></i>
+                          <span id="style5_likes_result"></span>
+                          <i onclick="style5_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                          <span id="style5_dislikes_result"></span>
+                      </div>
+                      <div class="container" style="text-align:right">
+                        <h5>Share This Post</h5>
+                        <div class="social">
+                          <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
+                          <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
+                          <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
+                          <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="box-site text-center">
+                      <!--Video of how to sew a skirt-->
+                      <div class="box-site text-center">
+                        <p>If you got some inspiration or just lack of it, check out our DIY section. Montoya Mayo helps you make an Ankara half circle maxi length skirt with pockets.</p>
+                        <a href="DIY.html#SewYourOwnSkirt"><img src="img/fullskirt.jpg" width="500" height="750" alt="" class="d-inline-block align-center"></a><br>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
         <!-- jQuery CDN - Slim version (=without AJAX) -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <!-- Popper.JS -->
