@@ -200,6 +200,42 @@
                           <p>Check out these simple DIY projects for an amazing house. We think you'll love number 5.</p>
                           <br>
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/6Yj09Z7EiRw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <!--Like and dislikes scripts-->
+                          <script>
+                            function houseideas_likes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.houseideas_likes_count) {
+                                  localStorage.houseideas_likes_count = Number(localStorage.houseideas_likes_count)+1;
+                                } else {
+                                  localStorage.houseideas_likes_count = 1;
+                                }
+                                document.getElementById("houseideas_likes_result").innerHTML =  localStorage.houseideas_likes_count + " Likes";
+                              } else {
+                                document.getElementById("houseideas_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <script>
+                            function houseideas_dislikes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.houseideas_dislikes_count) {
+                                  localStorage.houseideas_dislikes_count = Number(localStorage.houseideas_dislikes_count)+1;
+                                } else {
+                                  localStorage.houseideas_dislikes_count = 1;
+                                }
+                                document.getElementById("houseideas_dislikes_result").innerHTML =  localStorage.houseideas_dislikes_count + " Dislikes";
+                              } else {
+                                document.getElementById("houseideas_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <!--Like and dislike buttons-->
+                          <br>
+                          <br>
+                          <i onclick="houseideas_likes()" class="fa fa-heart" color="red"></i>
+                          <span id="houseideas_likes_result"></span>
+                          <i onclick="houseideas_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                          <span id="houseideas_dislikes_result"></span>
                           <div class="container" style="text-align:right">
                             <h5>Share This Post</h5>
                             <div class="social">
@@ -247,6 +283,42 @@
                           <p>And there you have it 7 super easy projects to get you on the way to becoming a super seamstress in no time.</p>
                         </div>
                         <button  aria-expanded = 'false' aria-controls='more-green' class = 'toggle-content'hidden><span class="text">Show More</span> <span class="visually-hidden"></span></button>
+                        <!--Like and dislikes scripts-->
+                        <script>
+                          function sew_likes() {
+                            if (typeof(Storage) !== "undefined") {
+                              if (localStorage.sew_likes_count) {
+                                localStorage.sew_likes_count = Number(localStorage.sew_likes_count)+1;
+                              } else {
+                                localStorage.sew_likes_count = 1;
+                              }
+                              document.getElementById("sew_likes_result").innerHTML =  localStorage.sew_likes_count + " Likes";
+                            } else {
+                              document.getElementById("sew_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                            }
+                          }
+                        </script>
+                        <script>
+                          function sew_dislikes() {
+                            if (typeof(Storage) !== "undefined") {
+                              if (localStorage.sew_dislikes_count) {
+                                localStorage.sew_dislikes_count = Number(localStorage.sew_dislikes_count)+1;
+                              } else {
+                                localStorage.sew_dislikes_count = 1;
+                              }
+                              document.getElementById("sew_dislikes_result").innerHTML =  localStorage.sew_dislikes_count + " Dislikes";
+                            } else {
+                              document.getElementById("sew_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                            }
+                          }
+                        </script>
+                        <!--Like and dislike buttons-->
+                        <br>
+                        <br>
+                        <i onclick="sew_likes()" class="fa fa-heart" color="red"></i>
+                        <span id="sew_likes_result"></span>
+                        <i onclick="sew_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                        <span id="sew_dislikes_result"></span>
                         <div class="container" style="text-align:right">
                           <h5>Share This Post</h5>
                           <div class="social">
@@ -265,6 +337,42 @@
                           <p>Montoya Mayo, a DIY sewing expert gives a detailed explanation and attention to guide you through each step of how to sew and make your own Ankara half circle maxi or midi length skirt with pockets. Click <a href="https://www.youtube.com/watch?v=a89yDJFX6z0"><strong>HERE</strong></a> to follow each step of her tutorials. </p>
                           <a href="https://montoyamayo.com/diy-half-circle-skirt-with-pockets-tutorial/"><img src="img/pocketskirt.jpg" height = 300 width = 400></a>
                           <br>
+                          <!--Like and dislikes scripts-->
+                          <script>
+                            function skirt_likes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.skirt_likes_count) {
+                                  localStorage.skirt_likes_count = Number(localStorage.skirt_likes_count)+1;
+                                } else {
+                                  localStorage.skirt_likes_count = 1;
+                                }
+                                document.getElementById("skirt_likes_result").innerHTML =  localStorage.skirt_likes_count + " Likes";
+                              } else {
+                                document.getElementById("skirt_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <script>
+                            function skirt_dislikes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.skirt_dislikes_count) {
+                                  localStorage.skirt_dislikes_count = Number(localStorage.skirt_dislikes_count)+1;
+                                } else {
+                                  localStorage.skirt_dislikes_count = 1;
+                                }
+                                document.getElementById("skirt_dislikes_result").innerHTML =  localStorage.skirt_dislikes_count + " Dislikes";
+                              } else {
+                                document.getElementById("skirt_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <!--Like and dislike buttons-->
+                          <br>
+                          <br>
+                          <i onclick="skirt_likes()" class="fa fa-heart" color="red"></i>
+                          <span id="skirt_likes_result"></span>
+                          <i onclick="skirt_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                          <span id="skirt_dislikes_result"></span>
                           <div class="container" style="text-align:right">
                             <h5>Share This Post</h5>
                             <div class="social">
@@ -282,6 +390,42 @@
                         <br>
                         <p>Pintrest is a great source of inspiration for projects and asthetics and an amazing time sink to spend scrolling through. But sometimes there can be so much to scroll through. Follow <a href="https://www.pinterest.co.uk/diyboards/best-of-diy-boards/">this</a> board for some super ideas.</p>
                         <a href = "https://www.pinterest.co.uk/diyboards/best-of-diy-boards/"><img src="img/pinterest-board.jpg" height = 400 width = 700></a>
+                        <!--Like and dislikes scripts-->
+                        <script>
+                          function pintrest_likes() {
+                            if (typeof(Storage) !== "undefined") {
+                              if (localStorage.pintrest_likes_count) {
+                                localStorage.pintrest_likes_count = Number(localStorage.pintrest_likes_count)+1;
+                              } else {
+                                localStorage.pintrest_likes_count = 1;
+                              }
+                              document.getElementById("pintrest_likes_result").innerHTML =  localStorage.pintrest_likes_count + " Likes";
+                            } else {
+                              document.getElementById("pintrest_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                            }
+                          }
+                        </script>
+                        <script>
+                          function pintrest_dislikes() {
+                            if (typeof(Storage) !== "undefined") {
+                              if (localStorage.pintrest_dislikes_count) {
+                                localStorage.pintrest_dislikes_count = Number(localStorage.pintrest_dislikes_count)+1;
+                              } else {
+                                localStorage.pintrest_dislikes_count = 1;
+                              }
+                              document.getElementById("pintrest_dislikes_result").innerHTML =  localStorage.pintrest_dislikes_count + " Dislikes";
+                            } else {
+                              document.getElementById("pintrest_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                            }
+                          }
+                        </script>
+                        <!--Like and dislike buttons-->
+                        <br>
+                        <br>
+                        <i onclick="pintrest_likes()" class="fa fa-heart" color="red"></i>
+                        <span id="pintrest_likes_result"></span>
+                        <i onclick="pintrest_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                        <span id="pintrest_dislikes_result"></span>
                         <div class="container" style="text-align:right">
                           <h5>Share This Post</h5>
                           <div class="social">
@@ -299,6 +443,43 @@
                         <br>
                         <p>Watch this video for 21 easy DIY projects for your bedroom.</p>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/Cvkiw2Mwle8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!--Like and dislikes scripts-->
+                        <script>
+                          function bedroom_likes() {
+                            if (typeof(Storage) !== "undefined") {
+                              if (localStorage.bedroom_likes_count) {
+                                localStorage.bedroom_likes_count = Number(localStorage.bedroom_likes_count)+1;
+                              } else {
+                                localStorage.bedroom_likes_count = 1;
+                              }
+                              document.getElementById("bedroom_likes_result").innerHTML =  localStorage.bedroom_likes_count + " Likes";
+                            } else {
+                              document.getElementById("bedroom_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                            }
+                          }
+                        </script>
+                        <script>
+                          function bedroom_dislikes() {
+                            if (typeof(Storage) !== "undefined") {
+                              if (localStorage.bedroom_dislikes_count) {
+                                localStorage.bedroom_dislikes_count = Number(localStorage.bedroom_dislikes_count)+1;
+                              } else {
+                                localStorage.bedroom_dislikes_count = 1;
+                              }
+                              document.getElementById("bedroom_dislikes_result").innerHTML =  localStorage.bedroom_dislikes_count + " Dislikes";
+                            } else {
+                              document.getElementById("bedroom_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                            }
+                          }
+                        </script>
+                        <!--Like and dislike buttons-->
+                        <br>
+                        <br>
+                        <i onclick="bedroom_likes()" class="fa fa-heart" color="red"></i>
+                        <span id="bedroom_likes_result"></span>
+                        <i onclick="bedroom_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                        <span id="bedroom_dislikes_result"></span>
+
                         <div class="container" style="text-align:right">
                           <h5>Share This Post</h5>
                           <div class="social">
@@ -316,6 +497,42 @@
                         <br>
                         <p>Watch this video for 25 hacks for for your home</p>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/4xtGRnGfiOw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <!--Like and dislikes scripts-->
+                        <script>
+                          function hack_likes() {
+                            if (typeof(Storage) !== "undefined") {
+                              if (localStorage.hack_likes_count) {
+                                localStorage.hack_likes_count = Number(localStorage.hack_likes_count)+1;
+                              } else {
+                                localStorage.hack_likes_count = 1;
+                              }
+                              document.getElementById("hack_likes_result").innerHTML =  localStorage.hack_likes_count + " Likes";
+                            } else {
+                              document.getElementById("hack_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                            }
+                          }
+                        </script>
+                        <script>
+                          function hack_dislikes() {
+                            if (typeof(Storage) !== "undefined") {
+                              if (localStorage.hack_dislikes_count) {
+                                localStorage.hack_dislikes_count = Number(localStorage.hack_dislikes_count)+1;
+                              } else {
+                                localStorage.hack_dislikes_count = 1;
+                              }
+                              document.getElementById("hack_dislikes_result").innerHTML =  localStorage.hack_dislikes_count + " Dislikes";
+                            } else {
+                              document.getElementById("hack_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                            }
+                          }
+                        </script>
+                        <!--Like and dislike buttons-->
+                        <br>
+                        <br>
+                        <i onclick="hack_likes()" class="fa fa-heart" color="red"></i>
+                        <span id="hack_likes_result"></span>
+                        <i onclick="hack_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                        <span id="hack_dislikes_result"></span>
                         <div class="container" style="text-align:right">
                           <h5>Share This Post</h5>
                           <div class="social">
