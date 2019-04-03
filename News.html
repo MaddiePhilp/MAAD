@@ -190,6 +190,41 @@
                             <a name="Plants"></a>
                             <h1>Why you should keep plants!<span class="badge badge-secondary">New</span></h1>
                             <p>We often associate plants as green and nature. Let's have a deeper look at their effect. Color psychology suggests that different colors can evoke psychological reactions, often thought to have an impact on moods and emotions. How does the color green make you feel? For many people it has strong associations with nature and immediately brings to mind the lush green of grass, trees, and forests, it is often described as a refreshing and tranquil color.</p>
+                            <!--script to store like and dislike values-->
+                            <script>
+                              function plant_likes() {
+                                if (typeof(Storage) !== "undefined") {
+                                  if (localStorage.plant_likes_count) {
+                                    localStorage.plant_likes_count = Number(localStorage.plant_likes_count)+1;
+                                  } else {
+                                    localStorage.plant_likes_count = 1;
+                                  }
+                                  document.getElementById("plant_likes_result").innerHTML =  localStorage.plant_likes_count + " Likes";
+                                } else {
+                                  document.getElementById("plant_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                                }
+                              }
+                            </script>
+                            <script>
+                              function plant_dislikes() {
+                                if (typeof(Storage) !== "undefined") {
+                                  if (localStorage.plant_dislikes_count) {
+                                    localStorage.plant_dislikes_count = Number(localStorage.plant_dislikes_count)+1;
+                                  } else {
+                                    localStorage.plant_dislikes_count = 1;
+                                  }
+                                  document.getElementById("plant_dislikes_result").innerHTML =  localStorage.plant_dislikes_count + " Dislikes";
+                                } else {
+                                  document.getElementById("plant_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                                }
+                              }
+                            </script>
+                            <!--Like and dislike buttons-->
+                            <i onclick="plant_likes()" class="fa fa-heart" color="red"></i>
+                            <span id="plant_likes_result"></span>
+                            <i onclick="plant_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                            <span id="plant_dislikes_result"></span>
+                            <div id="result1"></div>
                             <div class="container" style="text-align:right">
                               <h5>Share This Post</h5>
                               <div class="social">
@@ -207,6 +242,41 @@
                           <p>Celebrated on 08.03.2019, thousands of women and men gathered in cities around the world. Many used the occasion to protest feminist issues, such as the gender pay gap, violence against women and girls, and abortion rights. In some countries, women were called upon to strike, while in others a heavy police presence clouded peaceful demonstrations. Latin Americans also came out in their thousands, including in Honduras and El Salvador, which have some of the continent's highest rates of femicide - the killing of a woman or girl by a man and on account of her gender.
                           <br><br> Watch a message from the United Nations!</p>
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/52JGm-uqDZw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <br>
+                          <script>
+                            function iwd_likes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.iwd_likes_count) {
+                                  localStorage.iwd_likes_count = Number(localStorage.iwd_likes_count)+1;
+                                } else {
+                                  localStorage.iwd_likes_count = 1;
+                                }
+                                document.getElementById("iwd_likes_result").innerHTML =  localStorage.iwd_likes_count + " Likes";
+                              } else {
+                                document.getElementById("iwd_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <script>
+                            function iwd_dislikes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.iwd_dislikes_count) {
+                                  localStorage.iwd_dislikes_count = Number(localStorage.iwd_dislikes_count)+1;
+                                } else {
+                                  localStorage.iwd_dislikes_count = 1;
+                                }
+                                document.getElementById("iwd_likes_result").innerHTML =  localStorage.iwd_dislikes_count + " Dislikes";
+                              } else {
+                                document.getElementById("iwd_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <!--Like and dislike buttons-->
+                          <i onclick="iwd_likes()" class="fa fa-heart" color="red"></i>
+                          <span id="iwd_likes_result"></span>
+                          <i onclick="iwd_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                          <span id="iwd_dislikes_result"></span>
+                          <br>
                           <div class="container" style="text-align:right">
                             <h5>Share This Post</h5>
                             <div class="social">
@@ -223,6 +293,41 @@
                           <h1>Is the USA behind on Womens Rights?</h1>
                           <p>Watch this in depth video to find out!</p>
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/gIoXU1m0_jc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <script>
+                            function USA_likes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.USA_likes_count) {
+                                  localStorage.USA_likes_count = Number(localStorage.USA_likes_count)+1;
+                                } else {
+                                  localStorage.USA_likes_count = 1;
+                                }
+                                document.getElementById("USA_likes_result").innerHTML =  localStorage.USA_likes_count + " Likes";
+                              } else {
+                                document.getElementById("USA_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <script>
+                            function USA_dislikes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.USA_dislikes_count) {
+                                  localStorage.USA_dislikes_count = Number(localStorage.USA_dislikes_count)+1;
+                                } else {
+                                  localStorage.USA_dislikes_count = 1;
+                                }
+                                document.getElementById("USA_dislikes_result").innerHTML =  localStorage.USA_dislikes_count + " Dislikes";
+                              } else {
+                                document.getElementById("USA_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <!--Like and dislike buttons-->
+                          <br>
+                          <br>
+                          <i onclick="USA_likes()" class="fa fa-heart" color="red"></i>
+                          <span id="USA_likes_result"></span>
+                          <i onclick="USA_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                          <span id="USA_dislikes_result"></span>
                           <div class="container" style="text-align:right">
                             <h5>Share This Post</h5>
                             <div class="social">
@@ -278,6 +383,41 @@
                                   </p>
                               </div>
                               <button  aria-expanded = 'false' aria-controls='more-green' class = 'toggle-content'hidden><span class="text">Show More</span> <span class="visually-hidden"></span></button>
+                              <br>
+                              <br>
+                              <script>
+                                function color_likes() {
+                                  if (typeof(Storage) !== "undefined") {
+                                    if (localStorage.color_likes_count) {
+                                      localStorage.color_likes_count = Number(localStorage.color_likes_count)+1;
+                                    } else {
+                                      localStorage.color_likes_count = 1;
+                                    }
+                                    document.getElementById("color_likes_result").innerHTML =  localStorage.color_likes_count + " Likes";
+                                  } else {
+                                    document.getElementById("color_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                                  }
+                                }
+                              </script>
+                              <script>
+                                function color_dislikes() {
+                                  if (typeof(Storage) !== "undefined") {
+                                    if (localStorage.color_dislikes_count) {
+                                      localStorage.color_dislikes_count = Number(localStorage.color_dislikes_count)+1;
+                                    } else {
+                                      localStorage.color_dislikes_count = 1;
+                                    }
+                                    document.getElementById("color_dislikes_result").innerHTML =  localStorage.color_dislikes_count + " Dislikes";
+                                  } else {
+                                    document.getElementById("color_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                                  }
+                                }
+                              </script>
+                              <!--Like and dislike buttons-->
+                              <i onclick="color_likes()" class="fa fa-heart" color="red"></i>
+                              <span id="color_likes_result"></span>
+                              <i onclick="color_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                              <span id="color_dislikes_result"></span>
                             <div class="container" style="text-align:right">
                               <h5>Share This Post</h5>
                               <div class="social">
@@ -310,6 +450,41 @@
                               <iframe width="560" height="315" src="https://www.youtube.com/embed/xfBWk4nw440" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
                             <button   aria-expanded = 'false' aria-controls='more-code' class = 'toggle-content'hidden><span class="text">Show More</span> <span class="visually-hidden"></span></button>
+                            <script>
+                              function code_likes() {
+                                if (typeof(Storage) !== "undefined") {
+                                  if (localStorage.code_likes_count) {
+                                    localStorage.code_likes_count = Number(localStorage.code_likes_count)+1;
+                                  } else {
+                                    localStorage.code_likes_count = 1;
+                                  }
+                                  document.getElementById("code_likes_result").innerHTML =  localStorage.code_likes_count + " Likes";
+                                } else {
+                                  document.getElementById("code_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                                }
+                              }
+                            </script>
+                            <script>
+                              function code_dislikes() {
+                                if (typeof(Storage) !== "undefined") {
+                                  if (localStorage.code_dislikes_count) {
+                                    localStorage.code_dislikes_count = Number(localStorage.code_dislikes_count)+1;
+                                  } else {
+                                    localStorage.code_dislikes_count = 1;
+                                  }
+                                  document.getElementById("code_dislikes_result").innerHTML =  localStorage.code_dislikes_count + " Dislikes";
+                                } else {
+                                  document.getElementById("code_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                                }
+                              }
+                            </script>
+                            <!--Like and dislike buttons-->
+                            <br>
+                            <br>
+                            <i onclick="code_likes()" class="fa fa-heart" color="red"></i>
+                            <span id="code_likes_result"></span>
+                            <i onclick="code_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                            <span id="code_dislikes_result"></span>
                             <div class="container" style="text-align:right">
                               <h5>Share This Post</h5>
                               <div class="social">
