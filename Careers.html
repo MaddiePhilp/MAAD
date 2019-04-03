@@ -183,32 +183,81 @@
             <div class = "row">
               <div class = "col">
                 <div class="box-site text-center">
-                  <p> The most challenging aspect of women´s lives are pursuing a career and
-                  raising a family.</p>
-                  <p>In the process of building a career, women with a family including kids
+                  <p>
+                    The most challenging aspect of women´s lives are pursuing a career and
+                  raising a family.
+                  </p>
+                  <p>
+                    In the process of building a career, women with a family including kids
                     tend to have difficulties combining these two huge responsibilities
                     successfully and still  maintain a stress-free life. Both Part-time and
-                    full-time women workforces suffer the same fate.</p><br>
-                    <span> The aim of this career section is to provide 5 Basic Advices on
-                      how to balance Work and Family</span>
-                    <ol>  <li> Manage time effectively. Plan daily and divide hours to work and hours to spend on yourself and family.
-                    </li><br>
+                    full-time women workforces suffer the same fate.
+                    <br><br>
+                    The aim of this career section is to provide 5 Basic Advices on
+                    how to balance Work and Family
+                  </p>
+                    <ol>
+                      <li>
+                        Manage time effectively. Plan daily and divide hours to work and hours to
+                        spend on yourself and family.
+                      </li><br>
                       <img src="img/moms time management.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
-                      <li> Plan ahead of mealtimes. Consider cooking double quantities and freeze them for later use.
-                        This will save you time and stress.</li><br>
-                          <img src="img/moms frozen food.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
-                          <li> Ask your partner, any family member or friends to assist you on your errands, house duities or any personal responsibilities.
-                          </li><br>
-                          <img src="img/family cleaning.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
-                          <li> Stop comparing yourself to others moms. This
-                             will only result to stress and eventually ends you into depression.</li><br>
-                             <img src= "img/moms comparison.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
-                             <li> Take care of yourself. These may include meditating, exercising, eating well, meeting friends,
-                               joining clubs that share the same values as you do.</li><br>
-                               <img src="img/moms meditation.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
-                      <option value=""></option>
-</ol>
-
+                      <li>
+                        Plan ahead of mealtimes. Consider cooking double quantities and freeze them for later use.
+                        This will save you time and stress.
+                      </li><br>
+                      <img src="img/moms frozen food.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
+                      <li>
+                        Ask your partner, any family member or friends to assist you on your errands, house duities or any personal responsibilities.
+                      </li><br>
+                      <img src="img/family cleaning.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
+                      <li>
+                        Stop comparing yourself to others moms. This
+                        will only result to stress and eventually ends you into depression.
+                      </li><br>
+                      <img src= "img/moms comparison.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
+                      <li>
+                        Take care of yourself. These may include meditating, exercising, eating well, meeting friends,
+                        joining clubs that share the same values as you do.
+                      </li><br>
+                     <img src="img/moms meditation.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
+                  </ol>
+                  <!--Like and dislikes scripts-->
+                  <script>
+                    function career_likes() {
+                      if (typeof(Storage) !== "undefined") {
+                        if (localStorage.career_likes_count) {
+                          localStorage.career_likes_count = Number(localStorage.career_likes_count)+1;
+                        } else {
+                          localStorage.career_likes_count = 1;
+                        }
+                        document.getElementById("career_likes_result").innerHTML =  localStorage.career_likes_count + " Likes";
+                      } else {
+                        document.getElementById("career_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                      }
+                    }
+                  </script>
+                  <script>
+                    function career_dislikes() {
+                      if (typeof(Storage) !== "undefined") {
+                        if (localStorage.career_dislikes_count) {
+                          localStorage.career_dislikes_count = Number(localStorage.career_dislikes_count)+1;
+                        } else {
+                          localStorage.career_dislikes_count = 1;
+                        }
+                        document.getElementById("career_dislikes_result").innerHTML =  localStorage.career_dislikes_count + " Dislikes";
+                      } else {
+                        document.getElementById("career_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                      }
+                    }
+                  </script>
+                  <!--Like and dislike buttons-->
+                  <br>
+                  <br>
+                  <i onclick="career_likes()" class="fa fa-heart" color="red"></i>
+                  <span id="career_likes_result"></span>
+                  <i onclick="career_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
+                  <span id="career_dislikes_result"></span>
                 </div>
               </div>
             </div>
