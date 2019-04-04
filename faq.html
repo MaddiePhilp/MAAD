@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>MAAD FAQ</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome Source -->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+          <div class = "sticky-top">
+            <ul class="list-unstyled components">
+              <li>
+                <a href="index.html">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+              </li>
+              <li>
+                  <a href="Most_recent.html">
+                      <i class="fas fa-plus-circle"></i>
+                      Most Recent
+                  </a>
+                  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                      <i class="fas fa-copy"></i>
+                      Topics
+                  </a>
+                  <ul class="collapse list-unstyled" id="pageSubmenu">
+                      <!--sidebar drop down-->
+                      <li>
+                          <a href="Careers.html"><i class="fas fa-briefcase"></i> Careers</a>
+                      </li>
+                      <li>
+                          <a href="Style.html"><i class="fas fa-tshirt"></i> Style</a>
+                      </li>
+                      <li>
+                          <a href="DIY.html"><i class="fas fa-adjust"></i> DIY</a>
+                      </li>
+                      <li>
+                          <a href="News.html"><i class="fas fa-newspaper"></i> News</a>
+                      </li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="quiz.html">
+                      <i class="fas fa-grin-squint-tears"></i>
+                      Quiz
+                  </a>
+                  <a href="SocialLinks.html">
+                      <i class="fas fa-paper-plane"></i>
+                      Social
+                  </a>
+                  <a href="AboutUs.html">
+                      <i class="fas fa-address-card"></i>
+                      About Us
+                  </a>
+              </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+              <!--change to buttons for email sign up then have that in pop up-->
+                <li>
+                  <button type="button" class="btn block" data-toggle="modal" data-target="#emailform">
+                    Newsletter
+                  </button>
+                </li>
+                <br>
+                <li>
+                  <button type="button" class="btn" data-toggle="modal" data-target="#contactform">
+                    Contact Form
+                  </button>
+                </li>
+            </ul>
+            </div>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+          <!-- Email Sign up Modal -->
+          <div class="modal fade" id="emailform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backgrop = "false">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Sign up for our weeky Newsletter!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <input type="email" placeholder="Email Address">
+                    <button type="submit" class="btn btn-success">
+                      <i class="fas fa-check-circle"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Contact Form Modal -->
+          <div class="modal fade" id="contactform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backgrop = "false">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-center">
+                  <form action="action_page.php">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+                    <input type="email" id="fname" name="firstname" placeholder="Your email.."><br><br>
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                      <option value="usa">UK</option>
+                    </select><br><br>
+                    <textarea id="subject" name="subject" placeholder="What would you like to contact us about?" style="height:200px"></textarea><br>
+
+                    <input type="submit" value="Submit"><br>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                      <img src="img/lady.png" width="30" height="45" alt="" class="d-inline-block align-center">
+                      MAAD with the Juice!
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                          <form class="form-inline my-2 my-lg-0">
+                            <!--Search Box-->
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                          </form>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="row">
+              <div class="col box-site text-center">
+                <h1>FAQ</h1>
+                <br>
+                <p>Select a topic below:</p>
+                <div id="result">
+                  <select id='purpose'>
+                  <option value="0">Click to select a question</option>
+                  <option value="1">Who are we?</option>
+                  <option value="2">What is the point of MAAD with the juice?</option>
+                  <option value="3">Why the name MAAD with the juice?</option>
+                  <option value="4">How can I contact you?</option>
+                  <option value="5">Social?</option>
+                  </select>
+                  <div class = 'col box-site text-center' style='display:none;' id='Who'><br/>&nbsp;
+                    <h3>Who are we?</h3>
+                    <p>We are a group of students from Aberystwyth University learning to code and this is
+                    our first website!<br>
+                    MAAD is an acronym of our names: Maddie, Afia, Aniko and Debbie.</p>
+                  </div>
+                  <div class = 'col box-site text-center' style='display:none;' id='Point'><br/>&nbsp;
+                    <h3>What is the Point of MAAD with the juice?</h3>
+                    <p>MAAD with the juice, is dedicated to documenting the issues <strong>you</strong> care about. We're using the power of the internet to <strong>change our world.</strong> Our target audience are girls, women, mothers and all those that are keen learning and reading about interesting topics from a slightly different and unique perspective.</p>
+                  </div>
+                  <div class = 'col box-site text-center' style='display:none;' id='Name'><br/>&nbsp;
+                    <h3>Why the name MAAD with the juice?</h3>
+                    <p>
+                      Not really sure at this point. There was something about a song and juice and then our names...
+                      <br> and now this is the name of the site.
+                    </p>
+                  </div>
+                  <div class = 'col box-site text-center' style='display:none;' id='contact'><br/>&nbsp;
+                    <h3>How can I contact you?</h3>
+                      <p>
+                        <i class="fas fa-home mr-3"></i>MAAD HQ</p>
+                      <p>
+                        <i class="fas fa-envelope mr-3"></i> info@MAAD.co.uk</p>
+                      <p>
+                        <i class="fas fa-phone mr-3"></i> +44 (0) 1432 789 21</p>
+                      <p>
+                        <i class="fas fa-print mr-3"></i> +44 (0) 1432 789 21</p>
+                    </p>
+                  </div>
+                  <div class = 'col box-site text-center' style='display:none;' id='Social'><br/>&nbsp
+                    <div class = "row">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="box-site text-center">
+                          <h3> <span class="text-center"> Chat with us on Social!</span></h3>
+                        </div>
+                      </div>
+                        <!--Location of bootstrap containers on page-->
+              			    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <!--Location of text in boxes-->
+              					<div class="box-part text-center">
+                          <!--Logo image from font awesome, colour currently set to pink-->
+                          <i class="fab fa-instagram fa-3x" aria-hidden="true" style = "color:#7386D5"></i>
+                          <!--Header-->
+              						<div class="title">
+              							<h4>Instagram</h4>
+              						</div>
+                          <!--Text-->
+              						<div class="text">
+              							<span>We post regular pictures, competitions and quotes on Instagram. Follow us and join the family.</span>
+              						</div>
+                          <!--Social link-->
+                						<a href="http://www.instagram.com/" class="btn btn-outline-primary" role="button">Follow Us</a>
+              					 </div>
+              				</div>
+                      <!--Twitter-->
+              				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              					<div class="box-part text-center">
+              					    <i class="fab fa-twitter fa-3x" aria-hidden="true" style = "color:#7386D5"></i>
+              						<div class="title">
+              							<h4>Twitter</h4>
+              						</div>
+              						<div class="text">
+              							<span>All the info you need in 280 characters! Join the discussion on MAAD with the Juice Twitter.</span>
+              						</div>
+                						<a href="http://www.twitter.com/" class="btn btn-outline-primary" role="button">Follow Us</a>
+              					 </div>
+              				</div>
+                        <!--Facebook-->
+              				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              					<div class="box-part text-center">
+                        <i class="fab fa-facebook-f fa-3x" aria-hidden="true" style = "color:#7386D5"></i>
+              						<div class="title">
+              							<h4>Facebook</h4>
+              						</div>
+              						<div class="text">
+              							<span>Be part of our community! Chat with real women on Women's Magazine Facebook group.</span>
+              						</div>
+                						<a href="http://www.facebook.com/" class="btn btn-outline-primary" role="button">Like Us</a>
+              					 </div>
+              				</div>
+                      <!--Pintrest-->
+              				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              					<div class="box-part text-center">
+                        <i class="fab fa-pinterest-p fa-3x" aria-hidden="true" style = "color:#7386D5"></i>
+              						<div class="title">
+              							<h4>Pinterest</h4>
+              						</div>
+              						<div class="text">
+              							<span>Daily doses of inspiration direct to you from us at MAAD with the Juice.</span>
+              						</div>
+                						<a href="http://www.pintrest.com/" class="btn btn-outline-primary" role="button">Follow Us</a>
+              					 </div>
+              				</div>
+                      <!--Google Plus - if it's even a thing any more -->
+              				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              					<div class="box-part text-center">
+              					    <i class="fab fa-google-plus fa-3x" aria-hidden="true" style = "color:#7386D5"></i>
+              						<div class="title">
+              							<h4>Google</h4>
+              						</div>
+              						<div class="text">
+              							<span>Be part of the movement and join us on Google Plus.</span>
+              						</div>
+                						<a href="http://www.google.com/" class="btn btn-outline-primary" role="button">Join Us</a>
+              					 </div>
+              				</div>
+                      <!--Youtube-->
+              				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              					<div class="box-part text-center">
+                        <i class="fab fa-youtube fa-3x" aria-hidden="true" style = "color:#7386D5"></i>
+              						<div class="title">
+              							<h4>Youtube</h4>
+              						</div>
+              						<div class="text">
+              							<span>Info, travel and fun about what's happening in your world every week!</span>
+              						</div>
+                            <a href="http://www.youtube.com/" class="btn btn-outline-primary" role="button">Subscribe</a>
+              					 </div>
+              				</div>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+            <!-- Footer -->
+            <footer class="page-footer font-small teal pt-4">
+            <!-- Footer Text -->
+              <div class="container-fluid text-center text-md-left mt-2">
+                <!-- Grid row -->
+                <div class="row">
+                  <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                      <!-- Links -->
+                      <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                      <p>
+                        <a href="index.html!">Home</a>
+                      </p>
+                      <p>
+                        <a href="SocialLinks.html">Social</a>
+                      </p>
+                      <p>
+                        <a href="faq.html">FAQ</a>
+                      </p>
+                      <p>
+                        <a href="AboutUs.html">About Us</a>
+                      </p>
+                  </div>
+                  <!-- Grid column -->
+                  <div class="col-md-6 mt-md-0 mt-3">
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">MAAD With the Juice!</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
+                    <br>
+                    <p>
+                      We are a group of students from Aberystwyth University learning to code and this is
+                      our first website! MAAD with the juice, is dedicated to documenting the issues you care
+                      about. We're using the power of the internet to change our world.
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none pb-3">
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                      <i class="fas fa-home mr-3"></i>MAAD HQ</p>
+                    <p>
+                      <i class="fas fa-envelope mr-3"></i> info@MAAD.co.uk</p>
+                    <p>
+                      <i class="fas fa-phone mr-3"></i> +44 (0) 1432 789 21</p>
+                    <p>
+                      <i class="fas fa-print mr-3"></i> +44 (0) 1432 789 21</p>
+                  </div>
+                </div>
+                <!-- Grid row -->
+              </div>
+              <!-- Footer Text -->
+              <!-- Copyright -->
+              <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="https://mdbootstrap.com/education/bootstrap/"> MAAD with the Juice!</a>
+              </div>
+              <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+          <!-- jQuery CDN - Slim version (=without AJAX) -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <!-- Popper.JS -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+          <!-- Bootstrap JS -->
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+          <script src='js/collapse_sidebar.js'></script>
+          <script src="js/faqselector.js"></script>
+        </body>
+      </html>
