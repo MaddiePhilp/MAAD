@@ -224,41 +224,27 @@
                        <img src="img/moms meditation.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
                     </ol>
                     <!--Like and dislikes scripts-->
-                    <script>
-                      function career_likes() {
-                        if (typeof(Storage) !== "undefined") {
-                          if (localStorage.career_likes_count) {
-                            localStorage.career_likes_count = Number(localStorage.career_likes_count)+1;
-                          } else {
-                            localStorage.career_likes_count = 1;
-                          }
-                          document.getElementById("career_likes_result").innerHTML =  localStorage.career_likes_count + " Likes";
-                        } else {
-                          document.getElementById("career_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                        }
-                      }
-                    </script>
-                    <script>
-                      function career_dislikes() {
-                        if (typeof(Storage) !== "undefined") {
-                          if (localStorage.career_dislikes_count) {
-                            localStorage.career_dislikes_count = Number(localStorage.career_dislikes_count)+1;
-                          } else {
-                            localStorage.career_dislikes_count = 1;
-                          }
-                          document.getElementById("career_dislikes_result").innerHTML =  localStorage.career_dislikes_count + " Dislikes";
-                        } else {
-                          document.getElementById("career_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                        }
-                      }
-                    </script>
-                    <!--Like and dislike buttons-->
-                    <br>
-                    <br>
-                    <i onclick="career_likes()" class="fa fa-2x fa-heart" color="red"></i>
-                    <span id="career_likes_result"></span>
-                    <i onclick="career_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
-                    <span id="career_dislikes_result"></span>
+                    <!--share and like-->
+                    <div class="row LikeAndSocialFooter">
+                      <br>
+                      <!--like-->
+                      <div class="col" style="text-align:left">
+                      <!--Like and dislike buttons-->
+                      <h5>React</h5>
+                      <button id="clickme1" class="btn btn-outline-dark" data-toggle="button1">Like</button>
+                      <button id="clickme2" class="btn btn-outline-dark" data-toggle="button2">Dislike</button>
+                    </div>
+                    <div class="col" style="text-align:right">
+                      <h5>Share</h5>
+                      <div class="social">
+                        <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
+                        <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
+                        <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
+                        <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Share and like end-->
                   </div>
                 </div>
               </div>
@@ -271,5 +257,6 @@
           <!-- Bootstrap JS -->
           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
           <script src='js/collapse_sidebar.js'></script>
+          <script src='js/likecountercareers.js'></script>
   </body>
 </html>
