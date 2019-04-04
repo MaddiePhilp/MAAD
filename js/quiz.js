@@ -1,9 +1,5 @@
-var questions = [{
-    question: "Which Dikens novel has the character 'Scrooge'?",
-    choices: ["Macbeth", "A Christmas Carol", "A Tale of 2 Cities"],
-    correctAnswer: 1
-}, {
-    question: "Which country has a Great Wall",
+var questions = [ {
+    question: "Which country has a 'Great Wall'?",
     choices: ["America", "Great Britain", "China", "Japan"],
     correctAnswer: 2
 }, {
@@ -19,8 +15,8 @@ var questions = [{
     choices: ["Rice", "Pasta", "Bread"],
     correctAnswer: 0
 },{
-	question: "Which ficitional doctor can speak to animals?",
-    choices: ["Doctor Who", "Dr. Dolally", "Dr. Christopher Turk", "Dr. Doolittle"],
+	question: "Which fictional doctor can speak to animals?",
+    choices: ["Doctor Who", "Dr. Dolally", "Dr. Christopher Turk", "Dr. Dolittle"],
     correctAnswer: 3
 },{
 	question: "What night of the year is associated with Guy Fawkes?",
@@ -32,12 +28,17 @@ var questions = [{
     correctAnswer: 2
 },{
 	question: "What is the name of a picture which shows bones?",
-    choices: ["X-rag", "X-ray", "X-Files", "X-Code"],
+    choices: ["X-Rag", "X-Ray", "X-Files", "X-Code"],
     correctAnswer: 1
 },{
 	question: "Mount Blanc is the highest mountain in which mountain range?",
     choices: ["Alps", "Himalayas", "Rockies", "Amazon"],
     correctAnswer: 0
+},{
+    question: "Which Dikens novel has the character 'Scrooge'?",
+    choices: ["Macbeth", "A Christmas Carol", "A Tale of Two Cities"],
+    correctAnswer: 1
+
 }];
 
 var currentQuestion = 0;
@@ -47,6 +48,8 @@ var quizOver = false;
 var iSelectedAnswer = [];
 	var c=180;
 	var t;
+
+var container = document.getElementById('imageContainer')
 $(document).ready(function ()
 {
     // Display the first question
@@ -94,7 +97,7 @@ $(document).ready(function ()
               }
   			else
   			{
-                  // TODO: Remove any message -> not sure if this is efficient to call this each time....
+
                   $(document).find(".quizMessage").hide();
   				if (val == questions[currentQuestion].correctAnswer)
   				{
@@ -168,41 +171,7 @@ $(document).ready(function ()
 
   		}
 
-  		/*if(c == 0 )
-  		{
-  			if (!quizOver)
-  			{
-  				var val = $("input[type='radio']:checked").val();
-              	if (val == questions[currentQuestion].correctAnswer)
-  				{
-  					correctAnswers++;
-  				}
-  				currentQuestion++; // Since we have already displayed the first question on DOM ready
 
-  				if (currentQuestion < questions.length)
-  				{
-  					displayCurrentQuestion();
-  					c=15;
-  				}
-  				else
-  				{
-  					displayScore();
-  					$('#timer').html('');
-  					c=16;
-  					$(document).find(".nextButton").text("Play Again?");
-  					quizOver = true;
-  					return false;
-  				}
-  			}
-  			else
-  			{ // quiz is over and clicked the next button (which now displays 'Play Again?'
-  				quizOver = false;
-  				$(document).find(".nextButton").text("Next Question");
-  				resetQuiz();
-  				displayCurrentQuestion();
-  				hideScore();
-  			}
-  		}	*/
   		c = c - 1;
   		t = setTimeout(function()
   		{
@@ -301,5 +270,5 @@ $(document).ready(function ()
   	setTimeout(function()
   		{
   			viewResults();
-  		},3000);
+  		},30000000000000000000000);
   }
