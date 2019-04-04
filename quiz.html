@@ -188,7 +188,7 @@
                   <div class="col-lg-2">
 
                   </div>
-                      <div class="col-sm-12 col-lg-8 my-auto ">
+                      <div class="col-sm-12 col-lg-8 my-auto box-site text-center">
                         <div class="quizContainer  box-site text-center">
                         <h2>Wednesday 2<sup>nd</sup> April  <span class="badge badge-secondary">New</span></h2>
                         <br>
@@ -198,6 +198,49 @@
                         <div class="result"></div>
                         <button class="preButton btn btn-danger ">Previous Question</button>
                         <button class="nextButton btn btn-success ">Next Question</button>
+                    </div>
+                    <script>
+                    function quiz_likes() {
+                      if (typeof(Storage) !== "undefined") {
+                        if (localStorage.quiz_likes_count) {
+                          localStorage.quiz_likes_count = Number(localStorage.quiz_likes_count)+1;
+                        } else {
+                          localStorage.quiz_likes_count = 1;
+                        }
+                        document.getElementById("quiz_likes_result").innerHTML =  localStorage.quiz_likes_count + " Likes";
+                      } else {
+                        document.getElementById("quiz_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                      }
+                    }
+                  </script>
+                  <script>
+                    function quiz_dislikes() {
+                      if (typeof(Storage) !== "undefined") {
+                        if (localStorage.quiz_dislikes_count) {
+                          localStorage.quiz_dislikes_count = Number(localStorage.quiz_dislikes_count)+1;
+                        } else {
+                          localStorage.quiz_dislikes_count = 1;
+                        }
+                        document.getElementById("quiz_likes_result").innerHTML =  localStorage.quiz_dislikes_count + " Dislikes";
+                      } else {
+                        document.getElementById("quiz_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                      }
+                    }
+                  </script>
+                  <!--Like and dislike buttons-->
+                  <i onclick="quiz_likes()" class="fa fa-2x fa-heart" color="red"></i>
+                  <span id="quiz_likes_result"></span>
+                  <i onclick="quiz_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
+                  <span id="quiz_dislikes_result"></span>
+                  <br>
+                    <div class="container" style="text-align:right">
+                      <h5>Share This Post</h5>
+                      <div class="social">
+                        <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
+                        <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
+                        <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
+                        <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
+                      </div>
                     </div>
                   </div>
                   <div class="col-lg-2">

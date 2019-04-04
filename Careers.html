@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,260 +18,258 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
-</head>
-
-<body>
-
-
-    <div class="wrapper">
-        <!-- Sidebar Holder -->
-        <nav id="sidebar">
-          <div class = "sticky-top">
-            <ul class="list-unstyled components">
-              <li>
-                <a href="index.html">
-                    <i class="fas fa-home"></i>
-                    Home
-                </a>
-              </li>
-              <li>
-                  <a href="Most_recent.html">
-                      <i class="fas fa-plus-circle"></i>
-                      Most Recent
-                  </a>
-                  <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                      <i class="fas fa-copy"></i>
-                      Topics
-                  </a>
-                  <ul class="collapse list-unstyled" id="pageSubmenu">
-                      <!--sidebar drop down-->
-                      <li>
-                          <a href="Careers.html"><i class="fas fa-briefcase"></i> Careers</a>
-                      </li>
-                      <li>
-                          <a href="Style.html"><i class="fas fa-tshirt"></i> Style</a>
-                      </li>
-                      <li>
-                          <a href="DIY.html"><i class="fas fa-adjust"></i> DIY</a>
-                      </li>
-                      <li>
-                          <a href="News.html"><i class="fas fa-newspaper"></i> News</a>
-                      </li>
-                  </ul>
-              </li>
-              <li>
-                  <a href="quiz.html">
-                      <i class="fas fa-grin-squint-tears"></i>
-                      Quiz
-                  </a>
-                  <a href="SocialLinks.html">
-                      <i class="fas fa-paper-plane"></i>
-                      Social
-                  </a>
-                  <a href="AboutUs.html">
-                      <i class="fas fa-address-card"></i>
-                      About Us
-                  </a>
-              </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-              <!--change to buttons for email sign up then have that in pop up-->
+  </head>
+  <body>
+      <div class="wrapper">
+          <!-- Sidebar Holder -->
+          <nav id="sidebar">
+            <div class = "sticky-top">
+              <ul class="list-unstyled components">
                 <li>
-                  <button type="button" class="btn block" data-toggle="modal" data-target="#emailform">
-                    Newsletter
-                  </button>
+                  <a href="index.html">
+                      <i class="fas fa-home"></i>
+                      Home
+                  </a>
                 </li>
-                <br>
                 <li>
-                  <button type="button" class="btn" data-toggle="modal" data-target="#contactform">
-                    Contact Form
-                  </button>
-                </li>
-            </ul>
-            </div>
-        </nav>
-
-        <!-- Page Content Holder -->
-        <div id="content">
-          <!-- Email Sign up Modal -->
-          <div class="modal fade" id="emailform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backgrop = "false">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Sign up for our weeky Newsletter!</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <input type="email" placeholder="Email Address">
-                    <button type="submit" class="btn btn-success">
-                      <i class="fas fa-check-circle"></i>
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!--Contact Form Modal -->
-          <div class="modal fade" id="contactform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backgrop = "false">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body text-center">
-                  <form action="action_page.php">
-                    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
-                    <input type="email" id="fname" name="firstname" placeholder="Your email.."><br><br>
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                      <option value="australia">Australia</option>
-                      <option value="canada">Canada</option>
-                      <option value="usa">USA</option>
-                      <option value="usa">UK</option>
-                    </select><br><br>
-                    <textarea id="subject" name="subject" placeholder="What would you like to contact us about?" style="height:200px"></textarea><br>
-
-                    <input type="submit" value="Submit"><br>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Navbar-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-                <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="navbar-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-                    <a class="navbar-brand" href="#">
-                      <img src="img/lady.png" width="30" height="45" alt="" class="d-inline-block align-center">
-                      MAAD with the Juice!
+                    <a href="Most_recent.html">
+                        <i class="fas fa-plus-circle"></i>
+                        Most Recent
                     </a>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                          <form class="form-inline my-2 my-lg-0">
-                            <!--Search Box-->
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                          </form>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-          <!--Page Text Contents-->
-          <div class="container">
-            <div class = "row">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="box-site text-center">
-                  <h1> The Career and family journey of women!</h1><br>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Topics
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <!--sidebar drop down-->
+                        <li>
+                            <a href="Careers.html"><i class="fas fa-briefcase"></i> Careers</a>
+                        </li>
+                        <li>
+                            <a href="Style.html"><i class="fas fa-tshirt"></i> Style</a>
+                        </li>
+                        <li>
+                            <a href="DIY.html"><i class="fas fa-adjust"></i> DIY</a>
+                        </li>
+                        <li>
+                            <a href="News.html"><i class="fas fa-newspaper"></i> News</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="quiz.html">
+                        <i class="fas fa-grin-squint-tears"></i>
+                        Quiz
+                    </a>
+                    <a href="SocialLinks.html">
+                        <i class="fas fa-paper-plane"></i>
+                        Social
+                    </a>
+                    <a href="AboutUs.html">
+                        <i class="fas fa-address-card"></i>
+                        About Us
+                    </a>
+                </li>
+              </ul>
+
+              <ul class="list-unstyled CTAs">
+                <!--change to buttons for email sign up then have that in pop up-->
+                  <li>
+                    <button type="button" class="btn block" data-toggle="modal" data-target="#emailform">
+                      Newsletter
+                    </button>
+                  </li>
+                  <br>
+                  <li>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#contactform">
+                      Contact Form
+                    </button>
+                  </li>
+              </ul>
+              </div>
+          </nav>
+
+          <!-- Page Content Holder -->
+          <div id="content">
+            <!-- Email Sign up Modal -->
+            <div class="modal fade" id="emailform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backgrop = "false">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign up for our weeky Newsletter!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <input type="email" placeholder="Email Address">
+                      <button type="submit" class="btn btn-success">
+                        <i class="fas fa-check-circle"></i>
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <img src="img/women and work.jpg" class="rounded mx-auto d-block" alt="Responsive image"width="700" height="400">
+
+            <!--Contact Form Modal -->
+            <div class="modal fade" id="contactform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backgrop = "false">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body text-center">
+                    <form action="action_page.php">
+                      <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+                      <input type="email" id="fname" name="firstname" placeholder="Your email.."><br><br>
+                      <label for="country">Country</label>
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="usa">UK</option>
+                      </select><br><br>
+                      <textarea id="subject" name="subject" placeholder="What would you like to contact us about?" style="height:200px"></textarea><br>
+
+                      <input type="submit" value="Submit"><br>
+                    </form>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class = "row">
-              <div class = "col">
-                <div class="box-site">
-                  <p>
-                    The most challenging aspect of women´s lives are pursuing a career and
-                  raising a family.
-                  </p>
-                  <p>
-                    In the process of building a career, women with a family including kids
-                    tend to have difficulties combining these two huge responsibilities
-                    successfully and still  maintain a stress-free life. Both Part-time and
-                    full-time women workforces suffer the same fate.
-                    <br><br>
-                    The aim of this career section is to provide 5 Basic Advices on
-                    how to balance Work and Family
-                  </p>
-                    <ol style="text-align: left;">
-                      <li>
-                        Manage time effectively. Plan daily and divide hours to work and hours to
-                        spend on yourself and family.
-                      </li><br>
-                      <img src="img/moms time management.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
-                      <li>
-                        Plan ahead of mealtimes. Consider cooking double quantities and freeze them for later use.
-                        This will save you time and stress.
-                      </li><br>
-                      <img src="img/moms frozen food.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
-                      <li>
-                        Ask your partner, any family member or friends to assist you on your errands, house duities or any personal responsibilities.
-                      </li><br>
-                      <img src="img/family cleaning.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
-                      <li>
-                        Stop comparing yourself to others moms. This
-                        will only result to stress and eventually ends you into depression.
-                      </li><br>
-                      <img src= "img/moms comparison.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
-                      <li>
-                        Take care of yourself. These may include meditating, exercising, eating well, meeting friends,
-                        joining clubs that share the same values as you do.
-                      </li><br>
-                     <img src="img/moms meditation.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
-                  </ol>
-                  <!--Like and dislikes scripts-->
-                  <script>
-                    function career_likes() {
-                      if (typeof(Storage) !== "undefined") {
-                        if (localStorage.career_likes_count) {
-                          localStorage.career_likes_count = Number(localStorage.career_likes_count)+1;
+            <!--Navbar-->
+              <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                  <div class="container-fluid">
+
+                      <button type="button" id="sidebarCollapse" class="navbar-btn">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                      </button>
+                      <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <i class="fas fa-align-justify"></i>
+                      </button>
+                      <a class="navbar-brand" href="#">
+                        <img src="img/lady.png" width="30" height="45" alt="" class="d-inline-block align-center">
+                        MAAD with the Juice!
+                      </a>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="nav navbar-nav ml-auto">
+                            <form class="form-inline my-2 my-lg-0">
+                              <!--Search Box-->
+                              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+            <!--Page Text Contents-->
+            <div class="container">
+              <div class = "row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <div class="box-site text-center">
+                    <h1> The Career and family journey of women!</h1><br>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <img src="img/women and work.jpg" class="rounded mx-auto d-block" alt="Responsive image"width="700" height="400">
+              </div>
+              <div class = "row">
+                <div class = "col">
+                  <div class="box-site">
+                    <p>
+                      The most challenging aspect of women´s lives are pursuing a career and
+                    raising a family.
+                    </p>
+                    <p>
+                      In the process of building a career, women with a family including kids
+                      tend to have difficulties combining these two huge responsibilities
+                      successfully and still  maintain a stress-free life. Both Part-time and
+                      full-time women workforces suffer the same fate.
+                      <br><br>
+                      The aim of this career section is to provide 5 Basic Advices on
+                      how to balance Work and Family
+                    </p>
+                      <ol style="text-align: left;">
+                        <li>
+                          Manage time effectively. Plan daily and divide hours to work and hours to
+                          spend on yourself and family.
+                        </li><br>
+                        <img src="img/moms time management.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
+                        <li>
+                          Plan ahead of mealtimes. Consider cooking double quantities and freeze them for later use.
+                          This will save you time and stress.
+                        </li><br>
+                        <img src="img/moms frozen food.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
+                        <li>
+                          Ask your partner, any family member or friends to assist you on your errands, house duities or any personal responsibilities.
+                        </li><br>
+                        <img src="img/family cleaning.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
+                        <li>
+                          Stop comparing yourself to others moms. This
+                          will only result to stress and eventually ends you into depression.
+                        </li><br>
+                        <img src= "img/moms comparison.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
+                        <li>
+                          Take care of yourself. These may include meditating, exercising, eating well, meeting friends,
+                          joining clubs that share the same values as you do.
+                        </li><br>
+                       <img src="img/moms meditation.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
+                    </ol>
+                    <!--Like and dislikes scripts-->
+                    <script>
+                      function career_likes() {
+                        if (typeof(Storage) !== "undefined") {
+                          if (localStorage.career_likes_count) {
+                            localStorage.career_likes_count = Number(localStorage.career_likes_count)+1;
+                          } else {
+                            localStorage.career_likes_count = 1;
+                          }
+                          document.getElementById("career_likes_result").innerHTML =  localStorage.career_likes_count + " Likes";
                         } else {
-                          localStorage.career_likes_count = 1;
+                          document.getElementById("career_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
                         }
-                        document.getElementById("career_likes_result").innerHTML =  localStorage.career_likes_count + " Likes";
-                      } else {
-                        document.getElementById("career_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
                       }
-                    }
-                  </script>
-                  <script>
-                    function career_dislikes() {
-                      if (typeof(Storage) !== "undefined") {
-                        if (localStorage.career_dislikes_count) {
-                          localStorage.career_dislikes_count = Number(localStorage.career_dislikes_count)+1;
+                    </script>
+                    <script>
+                      function career_dislikes() {
+                        if (typeof(Storage) !== "undefined") {
+                          if (localStorage.career_dislikes_count) {
+                            localStorage.career_dislikes_count = Number(localStorage.career_dislikes_count)+1;
+                          } else {
+                            localStorage.career_dislikes_count = 1;
+                          }
+                          document.getElementById("career_dislikes_result").innerHTML =  localStorage.career_dislikes_count + " Dislikes";
                         } else {
-                          localStorage.career_dislikes_count = 1;
+                          document.getElementById("career_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
                         }
-                        document.getElementById("career_dislikes_result").innerHTML =  localStorage.career_dislikes_count + " Dislikes";
-                      } else {
-                        document.getElementById("career_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
                       }
-                    }
-                  </script>
-                  <!--Like and dislike buttons-->
-                  <br>
-                  <br>
-                  <i onclick="career_likes()" class="fa fa-heart" color="red"></i>
-                  <span id="career_likes_result"></span>
-                  <i onclick="career_dislikes()" class="fa fa-thumbs-down" color="gold"></i>
-                  <span id="career_dislikes_result"></span>
+                    </script>
+                    <!--Like and dislike buttons-->
+                    <br>
+                    <br>
+                    <i onclick="career_likes()" class="fa fa-2x fa-heart" color="red"></i>
+                    <span id="career_likes_result"></span>
+                    <i onclick="career_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
+                    <span id="career_dislikes_result"></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <!-- jQuery CDN - Slim version (=without AJAX) -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <!-- Popper.JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-        <!-- Bootstrap JS -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-        <script src='js/collapse_sidebar.js'></script>
-</body>
+          <!-- jQuery CDN - Slim version (=without AJAX) -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <!-- Popper.JS -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+          <!-- Bootstrap JS -->
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+          <script src='js/collapse_sidebar.js'></script>
+  </body>
+</html>
