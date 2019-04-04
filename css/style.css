@@ -357,8 +357,10 @@ ul {
 	margin: 20px;
 	}
 .LikeAndSocialFooter{
-	background-color: #7386D5;
-	 color: #fff;
-	 margin: auto;
-	 font-family: 'Poppins', sans-serif;
+	border-radius: 15px;
+	border-color: red;
+	border: solid #000;
+	border-width: 0 1px;
+	margin: auto;
+	color: black;
 }
