@@ -224,45 +224,93 @@
                        <img src="img/moms meditation.jpg"class="rounded mx-auto d-block"alt="Responsive image"width"500" height="250"><br>
                     </ol>
                     <!--Like and dislikes scripts-->
-                    <script>
-                      function career_likes() {
-                        if (typeof(Storage) !== "undefined") {
-                          if (localStorage.career_likes_count) {
-                            localStorage.career_likes_count = Number(localStorage.career_likes_count)+1;
-                          } else {
-                            localStorage.career_likes_count = 1;
-                          }
-                          document.getElementById("career_likes_result").innerHTML =  localStorage.career_likes_count + " Likes";
-                        } else {
-                          document.getElementById("career_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                        }
-                      }
-                    </script>
-                    <script>
-                      function career_dislikes() {
-                        if (typeof(Storage) !== "undefined") {
-                          if (localStorage.career_dislikes_count) {
-                            localStorage.career_dislikes_count = Number(localStorage.career_dislikes_count)+1;
-                          } else {
-                            localStorage.career_dislikes_count = 1;
-                          }
-                          document.getElementById("career_dislikes_result").innerHTML =  localStorage.career_dislikes_count + " Dislikes";
-                        } else {
-                          document.getElementById("career_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                        }
-                      }
-                    </script>
-                    <!--Like and dislike buttons-->
-                    <br>
-                    <br>
-                    <i onclick="career_likes()" class="fa fa-2x fa-heart" color="red"></i>
-                    <span id="career_likes_result"></span>
-                    <i onclick="career_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
-                    <span id="career_dislikes_result"></span>
+                    <!--share and like-->
+                    <div class="row LikeAndSocialFooter">
+                      <br>
+                      <!--like-->
+                      <div class="col" style="text-align:left">
+                      <!--Like and dislike buttons-->
+                      <h5>React</h5>
+                      <button id="clickme1" class="btn btn-outline-dark" data-toggle="button1">Like</button>
+                      <button id="clickme2" class="btn btn-outline-dark" data-toggle="button2">Dislike</button>
+                    </div>
+                    <div class="col" style="text-align:right">
+                      <h5>Share</h5>
+                      <div class="social">
+                        <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
+                        <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
+                        <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
+                        <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Share and like end-->
                   </div>
                 </div>
               </div>
             </div>
+            <!-- Footer -->
+            <footer class="page-footer font-small teal pt-4">
+            <!-- Footer Text -->
+              <div class="container-fluid text-center text-md-left mt-2">
+                <!-- Grid row -->
+                <div class="row">
+                  <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                      <!-- Links -->
+                      <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                      <p>
+                        <a href="index.html!">Home</a>
+                      </p>
+                      <p>
+                        <a href="SocialLinks.html">Social</a>
+                      </p>
+                      <p>
+                        <a href="faq.html">FAQ</a>
+                      </p>
+                      <p>
+                        <a href="AboutUs.html">About Us</a>
+                      </p>
+                  </div>
+                  <!-- Grid column -->
+                  <div class="col-md-6 mt-md-0 mt-3">
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">MAAD With the Juice!</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
+                    <br>
+                    <p>
+                      We are a group of students from Aberystwyth University learning to code and this is
+                      our first website! MAAD with the juice, is dedicated to documenting the issues you care
+                      about. We're using the power of the internet to change our world.
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none pb-3">
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                      <i class="fas fa-home mr-3"></i>MAAD HQ</p>
+                    <p>
+                      <i class="fas fa-envelope mr-3"></i> info@MAAD.co.uk</p>
+                    <p>
+                      <i class="fas fa-phone mr-3"></i> +44 (0) 1432 789 21</p>
+                    <p>
+                      <i class="fas fa-print mr-3"></i> +44 (0) 1432 789 21</p>
+                  </div>
+                </div>
+                <!-- Grid row -->
+              </div>
+              <!-- Footer Text -->
+              <!-- Copyright -->
+              <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="https://mdbootstrap.com/education/bootstrap/"> MAAD with the Juice!</a>
+              </div>
+              <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
           </div>
           <!-- jQuery CDN - Slim version (=without AJAX) -->
           <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -271,5 +319,6 @@
           <!-- Bootstrap JS -->
           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
           <script src='js/collapse_sidebar.js'></script>
+          <script src='js/likecountercareers.js'></script>
   </body>
 </html>

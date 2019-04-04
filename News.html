@@ -194,43 +194,18 @@
                             <a name="Plants"></a>
                             <h1>Why you should keep plants!<span class="badge badge-secondary">New</span></h1>
                             <p>We often associate plants as green and nature. Let's have a deeper look at their effect. Color psychology suggests that different colors can evoke psychological reactions, often thought to have an impact on moods and emotions. How does the color green make you feel? For many people it has strong associations with nature and immediately brings to mind the lush green of grass, trees, and forests, it is often described as a refreshing and tranquil color.</p>
-                            <!--script to store like and dislike values-->
-                            <script>
-                              function plant_likes() {
-                                if (typeof(Storage) !== "undefined") {
-                                  if (localStorage.plant_likes_count) {
-                                    localStorage.plant_likes_count = Number(localStorage.plant_likes_count)+1;
-                                  } else {
-                                    localStorage.plant_likes_count = 1;
-                                  }
-                                  document.getElementById("plant_likes_result").innerHTML =  localStorage.plant_likes_count + " Likes";
-                                } else {
-                                  document.getElementById("plant_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                                }
-                              }
-                            </script>
-                            <script>
-                              function plant_dislikes() {
-                                if (typeof(Storage) !== "undefined") {
-                                  if (localStorage.plant_dislikes_count) {
-                                    localStorage.plant_dislikes_count = Number(localStorage.plant_dislikes_count)+1;
-                                  } else {
-                                    localStorage.plant_dislikes_count = 1;
-                                  }
-                                  document.getElementById("plant_dislikes_result").innerHTML =  localStorage.plant_dislikes_count + " Dislikes";
-                                } else {
-                                  document.getElementById("plant_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                                }
-                              }
-                            </script>
-                            <!--Like and dislike buttons-->
-                            <i onclick="plant_likes()" class="fa fa-2x fa-heart" color="red"></i>
-                            <span id="plant_likes_result"></span>
-                            <i onclick="plant_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
-                            <span id="plant_dislikes_result"></span>
-                            <div id="result1"></div>
-                            <div class="container" style="text-align:right">
-                              <h5>Share This Post</h5>
+                            <!--share and like-->
+                            <div class="row LikeAndSocialFooter">
+                              <br>
+                              <!--like-->
+                              <div class="col" style="text-align:left">
+                              <!--Like and dislike buttons-->
+                              <h5>React</h5>
+                              <button id="clickme1" class="btn btn-outline-dark" data-toggle="button1">Like</button>
+                              <button id="clickme2" class="btn btn-outline-dark" data-toggle="button2">Dislike</button>
+                            </div>
+                            <div class="col" style="text-align:right">
+                              <h5>Share</h5>
                               <div class="social">
                                 <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
                                 <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
@@ -238,6 +213,8 @@
                                 <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
                               </div>
                             </div>
+                          </div>
+                          <!--Share and like end-->
                         </div>
                         <div class = "box-site text-center">
                           <!--International Womens Day-->
@@ -247,42 +224,18 @@
                           <br><br> Watch a message from the United Nations!</p>
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/52JGm-uqDZw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                           <br>
-                          <script>
-                            function iwd_likes() {
-                              if (typeof(Storage) !== "undefined") {
-                                if (localStorage.iwd_likes_count) {
-                                  localStorage.iwd_likes_count = Number(localStorage.iwd_likes_count)+1;
-                                } else {
-                                  localStorage.iwd_likes_count = 1;
-                                }
-                                document.getElementById("iwd_likes_result").innerHTML =  localStorage.iwd_likes_count + " Likes";
-                              } else {
-                                document.getElementById("iwd_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                              }
-                            }
-                          </script>
-                          <script>
-                            function iwd_dislikes() {
-                              if (typeof(Storage) !== "undefined") {
-                                if (localStorage.iwd_dislikes_count) {
-                                  localStorage.iwd_dislikes_count = Number(localStorage.iwd_dislikes_count)+1;
-                                } else {
-                                  localStorage.iwd_dislikes_count = 1;
-                                }
-                                document.getElementById("iwd_likes_result").innerHTML =  localStorage.iwd_dislikes_count + " Dislikes";
-                              } else {
-                                document.getElementById("iwd_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                              }
-                            }
-                          </script>
-                          <!--Like and dislike buttons-->
-                          <i onclick="iwd_likes()" class="fa fa-2x fa-heart" color="red"></i>
-                          <span id="iwd_likes_result"></span>
-                          <i onclick="iwd_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
-                          <span id="iwd_dislikes_result"></span>
-                          <br>
-                          <div class="container" style="text-align:right">
-                            <h5>Share This Post</h5>
+                          <!--share and like-->
+                          <div class="row LikeAndSocialFooter">
+                            <br>
+                            <!--like-->
+                            <div class="col" style="text-align:left">
+                            <!--Like and dislike buttons-->
+                            <h5>React</h5>
+                            <button id="clickme3" class="btn btn-outline-dark" data-toggle="button1">Like</button>
+                            <button id="clickme4" class="btn btn-outline-dark" data-toggle="button2">Dislike</button>
+                          </div>
+                          <div class="col" style="text-align:right">
+                            <h5>Share</h5>
                             <div class="social">
                               <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
                               <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
@@ -291,49 +244,26 @@
                             </div>
                           </div>
                         </div>
+                        <!--Share and like end-->
+                        </div>
                         <div class = "box-site text-center">
                           <!--USA womens rights-->
                           <a name="USA"></a>
                           <h1>Is the USA behind on Womens Rights?</h1>
                           <p>Watch this in depth video to find out!</p>
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/gIoXU1m0_jc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                          <script>
-                            function USA_likes() {
-                              if (typeof(Storage) !== "undefined") {
-                                if (localStorage.USA_likes_count) {
-                                  localStorage.USA_likes_count = Number(localStorage.USA_likes_count)+1;
-                                } else {
-                                  localStorage.USA_likes_count = 1;
-                                }
-                                document.getElementById("USA_likes_result").innerHTML =  localStorage.USA_likes_count + " Likes";
-                              } else {
-                                document.getElementById("USA_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                              }
-                            }
-                          </script>
-                          <script>
-                            function USA_dislikes() {
-                              if (typeof(Storage) !== "undefined") {
-                                if (localStorage.USA_dislikes_count) {
-                                  localStorage.USA_dislikes_count = Number(localStorage.USA_dislikes_count)+1;
-                                } else {
-                                  localStorage.USA_dislikes_count = 1;
-                                }
-                                document.getElementById("USA_dislikes_result").innerHTML =  localStorage.USA_dislikes_count + " Dislikes";
-                              } else {
-                                document.getElementById("USA_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                              }
-                            }
-                          </script>
-                          <!--Like and dislike buttons-->
-                          <br>
-                          <br>
-                          <i onclick="USA_likes()" class="fa fa-2x fa-heart" color="red"></i>
-                          <span id="USA_likes_result"></span>
-                          <i onclick="USA_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
-                          <span id="USA_dislikes_result"></span>
-                          <div class="container" style="text-align:right">
-                            <h5>Share This Post</h5>
+                          <!--share and like-->
+                          <div class="row LikeAndSocialFooter">
+                            <br>
+                            <!--like-->
+                            <div class="col" style="text-align:left">
+                            <!--Like and dislike buttons-->
+                            <h5>React</h5>
+                            <button id="clickme5" class="btn btn-outline-dark" data-toggle="button1">Like</button>
+                            <button id="clickme6" class="btn btn-outline-dark" data-toggle="button2">Dislike</button>
+                          </div>
+                          <div class="col" style="text-align:right">
+                            <h5>Share</h5>
                             <div class="social">
                               <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
                               <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
@@ -341,6 +271,8 @@
                               <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
                             </div>
                           </div>
+                        </div>
+                        <!--Share and like end-->
                         </div>
                         <div class = "box-site text-center">
                             <a name="Green"></a>
@@ -386,51 +318,30 @@
                                     </table>
                                   </p>
                               </div>
-                              <button  aria-expanded = 'false' aria-controls='more-green' class = 'toggle-content'hidden><span class="text">Show More</span> <span class="visually-hidden"></span></button>
+                              <button  aria-expanded = 'false' aria-controls='more-green' class = 'toggle-content btn btn-outline-dark'hidden><span class="text">Show More</span> <span class="visually-hidden"></span></button>
                               <br>
                               <br>
-                              <script>
-                                function color_likes() {
-                                  if (typeof(Storage) !== "undefined") {
-                                    if (localStorage.color_likes_count) {
-                                      localStorage.color_likes_count = Number(localStorage.color_likes_count)+1;
-                                    } else {
-                                      localStorage.color_likes_count = 1;
-                                    }
-                                    document.getElementById("color_likes_result").innerHTML =  localStorage.color_likes_count + " Likes";
-                                  } else {
-                                    document.getElementById("color_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                                  }
-                                }
-                              </script>
-                              <script>
-                                function color_dislikes() {
-                                  if (typeof(Storage) !== "undefined") {
-                                    if (localStorage.color_dislikes_count) {
-                                      localStorage.color_dislikes_count = Number(localStorage.color_dislikes_count)+1;
-                                    } else {
-                                      localStorage.color_dislikes_count = 1;
-                                    }
-                                    document.getElementById("color_dislikes_result").innerHTML =  localStorage.color_dislikes_count + " Dislikes";
-                                  } else {
-                                    document.getElementById("color_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                                  }
-                                }
-                              </script>
-                              <!--Like and dislike buttons-->
-                              <i onclick="color_likes()" class="fa fa-2x fa-heart" color="red"></i>
-                              <span id="color_likes_result"></span>
-                              <i onclick="color_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
-                              <span id="color_dislikes_result"></span>
-                            <div class="container" style="text-align:right">
-                              <h5>Share This Post</h5>
-                              <div class="social">
-                                <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
-                                <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
-                                <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
-                                <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
+                              <!--share and like-->
+                              <div class="row LikeAndSocialFooter">
+                                <br>
+                                <!--like-->
+                                <div class="col" style="text-align:left">
+                                <!--Like and dislike buttons-->
+                                <h5>React</h5>
+                                <button id="clickme7" class="btn btn-outline-dark" data-toggle="button1">Like</button>
+                                <button id="clickme8" class="btn btn-outline-dark" data-toggle="button2">Dislike</button>
+                              </div>
+                              <div class="col" style="text-align:right">
+                                <h5>Share</h5>
+                                <div class="social">
+                                  <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
+                                  <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
+                                  <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
+                                  <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
+                                </div>
                               </div>
                             </div>
+                            <!--Share and like end-->
                         </div>
                         <div class = "box-site text-center">
                           <!--learning to code-->
@@ -453,44 +364,19 @@
                               <p> Still not convinced? <br> Watch this video on the imprtance of coding</p>
                               <iframe width="560" height="315" src="https://www.youtube.com/embed/xfBWk4nw440" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <button   aria-expanded = 'false' aria-controls='more-code' class = 'toggle-content'hidden><span class="text">Show More</span> <span class="visually-hidden"></span></button>
-                            <script>
-                              function code_likes() {
-                                if (typeof(Storage) !== "undefined") {
-                                  if (localStorage.code_likes_count) {
-                                    localStorage.code_likes_count = Number(localStorage.code_likes_count)+1;
-                                  } else {
-                                    localStorage.code_likes_count = 1;
-                                  }
-                                  document.getElementById("code_likes_result").innerHTML =  localStorage.code_likes_count + " Likes";
-                                } else {
-                                  document.getElementById("code_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                                }
-                              }
-                            </script>
-                            <script>
-                              function code_dislikes() {
-                                if (typeof(Storage) !== "undefined") {
-                                  if (localStorage.code_dislikes_count) {
-                                    localStorage.code_dislikes_count = Number(localStorage.code_dislikes_count)+1;
-                                  } else {
-                                    localStorage.code_dislikes_count = 1;
-                                  }
-                                  document.getElementById("code_dislikes_result").innerHTML =  localStorage.code_dislikes_count + " Dislikes";
-                                } else {
-                                  document.getElementById("code_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                                }
-                              }
-                            </script>
-                            <!--Like and dislike buttons-->
-                            <br>
-                            <br>
-                            <i onclick="code_likes()" class="fa fa-2x fa-heart" color="red"></i>
-                            <span id="code_likes_result"></span>
-                            <i onclick="code_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
-                            <span id="code_dislikes_result"></span>
-                            <div class="container" style="text-align:right">
-                              <h5>Share This Post</h5>
+                            <button   aria-expanded = 'false' aria-controls='more-code' class = 'toggle-content btn btn-outline-dark'hidden><span class="text">Show More</span> <span class="visually-hidden"></span></button>
+                            <!--share and like-->
+                            <div class="row LikeAndSocialFooter">
+                              <br>
+                              <!--like-->
+                              <div class="col" style="text-align:left">
+                              <!--Like and dislike buttons-->
+                              <h5>React</h5>
+                              <button id="clickme9" class="btn btn-outline-dark" data-toggle="button1">Like</button>
+                              <button id="clickme10" class="btn btn-outline-dark" data-toggle="button2">Dislike</button>
+                            </div>
+                            <div class="col" style="text-align:right">
+                              <h5>Share</h5>
                               <div class="social">
                                 <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
                                 <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
@@ -498,10 +384,74 @@
                                 <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
                               </div>
                             </div>
+                          </div>
+                          <!--Share and like end-->
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Footer -->
+            <footer class="page-footer font-small teal pt-4">
+            <!-- Footer Text -->
+              <div class="container-fluid text-center text-md-left mt-2">
+                <!-- Grid row -->
+                <div class="row">
+                  <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                      <!-- Links -->
+                      <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                      <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                      <p>
+                        <a href="index.html!">Home</a>
+                      </p>
+                      <p>
+                        <a href="SocialLinks.html">Social</a>
+                      </p>
+                      <p>
+                        <a href="faq.html">FAQ</a>
+                      </p>
+                      <p>
+                        <a href="AboutUs.html">About Us</a>
+                      </p>
+                  </div>
+                  <!-- Grid column -->
+                  <div class="col-md-6 mt-md-0 mt-3">
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">MAAD With the Juice!</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
+                    <br>
+                    <p>
+                      We are a group of students from Aberystwyth University learning to code and this is
+                      our first website! MAAD with the juice, is dedicated to documenting the issues you care
+                      about. We're using the power of the internet to change our world.
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none pb-3">
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                      <i class="fas fa-home mr-3"></i>MAAD HQ</p>
+                    <p>
+                      <i class="fas fa-envelope mr-3"></i> info@MAAD.co.uk</p>
+                    <p>
+                      <i class="fas fa-phone mr-3"></i> +44 (0) 1432 789 21</p>
+                    <p>
+                      <i class="fas fa-print mr-3"></i> +44 (0) 1432 789 21</p>
+                  </div>
+                </div>
+                <!-- Grid row -->
+              </div>
+              <!-- Footer Text -->
+              <!-- Copyright -->
+              <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                <a href="https://mdbootstrap.com/education/bootstrap/"> MAAD with the Juice!</a>
+              </div>
+              <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
         </div>
         <!-- jQuery CDN - Slim version (=without AJAX) -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -511,5 +461,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
         <script src='js/collapse_sidebar.js'></script>
         <script src='js/moretext.js'></script>
+        <script src='js/likecounternews.js'></script>
     </body>
 </html>
