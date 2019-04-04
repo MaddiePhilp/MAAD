@@ -200,55 +200,29 @@
                         <button class="nextButton btn btn-success ">Next Question</button>
                     </div>
                     <!--share and like-->
-                    <div class="row LikeAndSocialFooter">
-                      <!--like-->
-                      <div class="col" style="text-align:left">
-                        <script>
-                        function quiz_likes() {
-                          if (typeof(Storage) !== "undefined") {
-                            if (localStorage.quiz_likes_count) {
-                              localStorage.quiz_likes_count = Number(localStorage.quiz_likes_count)+1;
-                            } else {
-                              localStorage.quiz_likes_count = 1;
-                            }
-                            document.getElementById("quiz_likes_result").innerHTML =  localStorage.quiz_likes_count + " Likes";
-                          } else {
-                            document.getElementById("quiz_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                          }
-                        }
-                      </script>
-                      <script>
-                        function quiz_dislikes() {
-                          if (typeof(Storage) !== "undefined") {
-                            if (localStorage.quiz_dislikes_count) {
-                              localStorage.quiz_dislikes_count = Number(localStorage.quiz_dislikes_count)+1;
-                            } else {
-                              localStorage.quiz_dislikes_count = 1;
-                            }
-                            document.getElementById("quiz_likes_result").innerHTML =  localStorage.quiz_dislikes_count + " Dislikes";
-                          } else {
-                            document.getElementById("quiz_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
-                          }
-                        }
-                      </script>
-                      <!--Like and dislike buttons-->
-                      <h5>React</h5>
-                      <i onclick="quiz_likes()" class="fa fa-2x fa-heart" color="#fff"></i>
-                      <span id="quiz_likes_result"></span>
-                      <i onclick="quiz_dislikes()" class="fa fa-2x fa-thumbs-down" color="#fff"></i>
-                      <span id="quiz_dislikes_result"></span>
-                    </div>
-                    <div class="col" style="text-align:right">
-                      <h5>Share</h5>
-                      <div class="social">
-                        <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#fff"></i></a>
-                        <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#fff"></i></a>
-                        <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#fff"></i></a>
-                        <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#fff"></i></a>
+
+                        <!--Like and dislikes scripts-->
+                        <!--share and like-->
+                        <div class="row LikeAndSocialFooter">
+                          <br>
+                          <!--like-->
+                          <div class="col" style="text-align:left">
+                          <!--Like and dislike buttons-->
+                          <h5>React</h5>
+                          <button id="clickme1" class="btn btn-outline-dark" data-toggle="button1">Like</button>
+                          <button id="clickme2" class="btn btn-outline-dark" data-toggle="button2">Dislike</button>
+                        </div>
+                        <div class="col" style="text-align:right">
+                          <h5>Share</h5>
+                          <div class="social">
+                            <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
+                            <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
+                            <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
+                            <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <!--Share and like end-->
+                      <!--Share and like end-->
                 </div>
               </div>
             </div>
@@ -326,5 +300,6 @@
         <script src='js/collapse_sidebar.js'></script>
         <!--quiz javscript-->
         <script type="text/javascript" src="js/quiz.js"></script>
+        <script type="text/javascript" src="js/likecounterquiz.js"></script>
     </body>
 </html>
