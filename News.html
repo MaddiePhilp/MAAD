@@ -53,11 +53,15 @@
                                 <a href="DIY.html"><i class="fas fa-adjust"></i> DIY</a>
                             </li>
                             <li>
-                                <a href="News.html"><i class="fas fa-gavel"></i> News</a>
+                                <a href="News.html"><i class="fas fa-newspaper"></i>  News</a>
                             </li>
                         </ul>
                     </li>
                     <li>
+                      <a href="quiz.html">
+                          <i class="fas fa-grin-squint-tears"></i>
+                          Quiz
+                      </a>
                         <a href="SocialLinks.html">
                             <i class="fas fa-paper-plane"></i>
                             Social
@@ -173,95 +177,327 @@
                 <div class = "row">
                 <!--Stories Bar with links to further down page -->
                     <div class = "col-md-3 col-lg-3 col-sm-12">
-                        <div class = "box-site text-center sticky-top sticky-top-2">
+                        <div class = "box-site text-center sticky-top sticky-top-2 ">
                           <h2>Stories</h2><br>
-                          <a href="#Plant">Value of Keeping Plants</a><br><br>
-                          <a href="#IWD">International Womens Day</a><br><br>
-                          <a href="#USA">Is the USA behind on Womens Rights?</a><br><br>
-                          <a href="#Green">The Psycology of the Color Green</a><br><br>
-                          <a href="#Code">5 Reasons to learn to code</a><br><br>
+                          <div class="btn-group-vertical" >
+                            <button type="button" class="btn btn-outline-dark" style = 'display:inline-flex; white-space:normal'><a href="#Plant">Value of Keeping Plants</a></button>
+                            <button type="button" class="btn btn-outline-dark" style = 'display:inline-flex; white-space:normal'><a href="#IWD">International Womens Day</a></button>
+                            <button type="button" class="btn btn-outline-dark" style = 'display:inline-flex; white-space:normal'><a href="#USA">Is the USA behind on Womens Rights?</a></button>
+                            <button type="button" class="btn btn-outline-dark" style = 'display:inline-flex; white-space:normal'><a href="#Green">The Psycology of the Color Green</a></button>
+                            <button type="button" class="btn btn-outline-dark" style = 'display:inline-flex; white-space:normal'><a href="#Code">5 Reasons to learn to code</a></button>
+                        </div>
                         </div>
                     </div>
                     <div class = "col-md-9 col-lg-9 col-sm-12">
                         <div class = "box-site text-center">
+                          <!--Plants-->
                             <a name="Plants"></a>
-                            <h1>Why you should keep plants!</h1>
+                            <h1>Why you should keep plants!<span class="badge badge-secondary">New</span></h1>
                             <p>We often associate plants as green and nature. Let's have a deeper look at their effect. Color psychology suggests that different colors can evoke psychological reactions, often thought to have an impact on moods and emotions. How does the color green make you feel? For many people it has strong associations with nature and immediately brings to mind the lush green of grass, trees, and forests, it is often described as a refreshing and tranquil color.</p>
+                            <!--script to store like and dislike values-->
+                            <script>
+                              function plant_likes() {
+                                if (typeof(Storage) !== "undefined") {
+                                  if (localStorage.plant_likes_count) {
+                                    localStorage.plant_likes_count = Number(localStorage.plant_likes_count)+1;
+                                  } else {
+                                    localStorage.plant_likes_count = 1;
+                                  }
+                                  document.getElementById("plant_likes_result").innerHTML =  localStorage.plant_likes_count + " Likes";
+                                } else {
+                                  document.getElementById("plant_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                                }
+                              }
+                            </script>
+                            <script>
+                              function plant_dislikes() {
+                                if (typeof(Storage) !== "undefined") {
+                                  if (localStorage.plant_dislikes_count) {
+                                    localStorage.plant_dislikes_count = Number(localStorage.plant_dislikes_count)+1;
+                                  } else {
+                                    localStorage.plant_dislikes_count = 1;
+                                  }
+                                  document.getElementById("plant_dislikes_result").innerHTML =  localStorage.plant_dislikes_count + " Dislikes";
+                                } else {
+                                  document.getElementById("plant_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                                }
+                              }
+                            </script>
+                            <!--Like and dislike buttons-->
+                            <i onclick="plant_likes()" class="fa fa-2x fa-heart" color="red"></i>
+                            <span id="plant_likes_result"></span>
+                            <i onclick="plant_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
+                            <span id="plant_dislikes_result"></span>
+                            <div id="result1"></div>
+                            <div class="container" style="text-align:right">
+                              <h5>Share This Post</h5>
+                              <div class="social">
+                                <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
+                                <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
+                                <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
+                                <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
+                              </div>
+                            </div>
                         </div>
                         <div class = "box-site text-center">
+                          <!--International Womens Day-->
                           <a name="IWD"></a>
                           <h1>International Women's Day!</h1>
                           <p>Celebrated on 08.03.2019, thousands of women and men gathered in cities around the world. Many used the occasion to protest feminist issues, such as the gender pay gap, violence against women and girls, and abortion rights. In some countries, women were called upon to strike, while in others a heavy police presence clouded peaceful demonstrations. Latin Americans also came out in their thousands, including in Honduras and El Salvador, which have some of the continent's highest rates of femicide - the killing of a woman or girl by a man and on account of her gender.
                           <br><br> Watch a message from the United Nations!</p>
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/52JGm-uqDZw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <br>
+                          <script>
+                            function iwd_likes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.iwd_likes_count) {
+                                  localStorage.iwd_likes_count = Number(localStorage.iwd_likes_count)+1;
+                                } else {
+                                  localStorage.iwd_likes_count = 1;
+                                }
+                                document.getElementById("iwd_likes_result").innerHTML =  localStorage.iwd_likes_count + " Likes";
+                              } else {
+                                document.getElementById("iwd_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <script>
+                            function iwd_dislikes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.iwd_dislikes_count) {
+                                  localStorage.iwd_dislikes_count = Number(localStorage.iwd_dislikes_count)+1;
+                                } else {
+                                  localStorage.iwd_dislikes_count = 1;
+                                }
+                                document.getElementById("iwd_likes_result").innerHTML =  localStorage.iwd_dislikes_count + " Dislikes";
+                              } else {
+                                document.getElementById("iwd_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <!--Like and dislike buttons-->
+                          <i onclick="iwd_likes()" class="fa fa-2x fa-heart" color="red"></i>
+                          <span id="iwd_likes_result"></span>
+                          <i onclick="iwd_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
+                          <span id="iwd_dislikes_result"></span>
+                          <br>
+                          <div class="container" style="text-align:right">
+                            <h5>Share This Post</h5>
+                            <div class="social">
+                              <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
+                              <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
+                              <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
+                              <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
+                            </div>
+                          </div>
                         </div>
                         <div class = "box-site text-center">
+                          <!--USA womens rights-->
                           <a name="USA"></a>
                           <h1>Is the USA behind on Womens Rights?</h1>
                           <p>Watch this in depth video to find out!</p>
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/gIoXU1m0_jc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <script>
+                            function USA_likes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.USA_likes_count) {
+                                  localStorage.USA_likes_count = Number(localStorage.USA_likes_count)+1;
+                                } else {
+                                  localStorage.USA_likes_count = 1;
+                                }
+                                document.getElementById("USA_likes_result").innerHTML =  localStorage.USA_likes_count + " Likes";
+                              } else {
+                                document.getElementById("USA_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <script>
+                            function USA_dislikes() {
+                              if (typeof(Storage) !== "undefined") {
+                                if (localStorage.USA_dislikes_count) {
+                                  localStorage.USA_dislikes_count = Number(localStorage.USA_dislikes_count)+1;
+                                } else {
+                                  localStorage.USA_dislikes_count = 1;
+                                }
+                                document.getElementById("USA_dislikes_result").innerHTML =  localStorage.USA_dislikes_count + " Dislikes";
+                              } else {
+                                document.getElementById("USA_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                              }
+                            }
+                          </script>
+                          <!--Like and dislike buttons-->
+                          <br>
+                          <br>
+                          <i onclick="USA_likes()" class="fa fa-2x fa-heart" color="red"></i>
+                          <span id="USA_likes_result"></span>
+                          <i onclick="USA_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
+                          <span id="USA_dislikes_result"></span>
+                          <div class="container" style="text-align:right">
+                            <h5>Share This Post</h5>
+                            <div class="social">
+                              <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
+                              <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
+                              <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
+                              <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
+                            </div>
+                          </div>
                         </div>
                         <div class = "box-site text-center">
                             <a name="Green"></a>
+                            <!--Colour green-->
                             <h1>The Color Psychology of Green</h1>
                             <p>
                                 Green is a cool color that symbolizes nature and the natural world.
                                 Green also represents tranquility, good luck, health, and jealousy.
-                                Researchers have also found that green can improve reading ability.
-                                <br><br>Some students may find that laying a transparent sheet of green paper over reading material increases reading speed and comprehension.
-                                Green has long been a symbol of fertility and was once the preferred color choice for wedding gowns in the 15th-century. Even today, green M & M's (an American chocolate candy) are said to send a sexual message.
-                                Green is often used in decorating for its calming effect.
-                                <br><br>Green is thought to relieve stress and help heal. Those who have a green work environment experience fewer stomachaches.
-                                While some find green a relaxing color, others find that it gives them a feeling of excitement. This can be especially true of particularly vibrant shades of green. Although green plants has calming and relaxing effects on most of us, the light intensity of other colors have effect on the way you feel so does colorful flowers.
-                                <br><br>
-                                <table class='center' style="text-align:center;">
-                                  <tr>
-                                    <th style=background:#F5F5F5>Color</th>
-                                    <th style=background:#F5F5F5>Effect</th>
-                                  </tr>
-                                  <tr>
-                                    <td><strong>Dark Blue</strong></td>
-                                    <td>associated with night, often leads to passivity</td>
-                                  </tr>
-                                  <tr>
-                                    <td><strong>Blue & Green</strong></td>
-                                    <td>alming – blue is the most preferred color across cultures</td>
-                                  </tr>
-                                  <tr>
-                                    <td><strong>Red & Orange</strong></td>
-                                    <td>arousing</td>
-                                  </tr>
-                                  <tr>
-                                    <td><strong>Red</strong></td>
-                                    <td>may stimulate excitement and is used to light gambling casinos</td>
-                                  </tr>
-                                  <tr>
-                                    <td><strong>Pink</strong></td>
-                                    <td>calmed inmates in institutions</td>
-                                  </tr>
-                                </table>
-                            </p>
+                                Researchers have also found that green can improve reading ability.</p>
+                                <div id = 'more-green' class = 'fulltext'>
+                                  <p>
+                                    <br><br>Some students may find that laying a transparent sheet of green paper over reading material increases reading speed and comprehension.
+                                    Green has long been a symbol of fertility and was once the preferred color choice for wedding gowns in the 15th-century. Even today, green M & M's (an American chocolate candy) are said to send a sexual message.
+                                    Green is often used in decorating for its calming effect.
+                                    <br><br>Green is thought to relieve stress and help heal. Those who have a green work environment experience fewer stomachaches.
+                                    While some find green a relaxing color, others find that it gives them a feeling of excitement. This can be especially true of particularly vibrant shades of green. Although green plants has calming and relaxing effects on most of us, the light intensity of other colors have effect on the way you feel so does colorful flowers.
+                                    <br><br>
+                                    <table class='center' style="text-align:center;">
+                                      <tr>
+                                        <th style=background:#F5F5F5>Color</th>
+                                        <th style=background:#F5F5F5>Effect</th>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>Dark Blue</strong></td>
+                                        <td>associated with night, often leads to passivity</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>Blue & Green</strong></td>
+                                        <td>alming – blue is the most preferred color across cultures</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>Red & Orange</strong></td>
+                                        <td>arousing</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>Red</strong></td>
+                                        <td>may stimulate excitement and is used to light gambling casinos</td>
+                                      </tr>
+                                      <tr>
+                                        <td><strong>Pink</strong></td>
+                                        <td>calmed inmates in institutions</td>
+                                      </tr>
+                                    </table>
+                                  </p>
+                              </div>
+                              <button  aria-expanded = 'false' aria-controls='more-green' class = 'toggle-content'hidden><span class="text">Show More</span> <span class="visually-hidden"></span></button>
+                              <br>
+                              <br>
+                              <script>
+                                function color_likes() {
+                                  if (typeof(Storage) !== "undefined") {
+                                    if (localStorage.color_likes_count) {
+                                      localStorage.color_likes_count = Number(localStorage.color_likes_count)+1;
+                                    } else {
+                                      localStorage.color_likes_count = 1;
+                                    }
+                                    document.getElementById("color_likes_result").innerHTML =  localStorage.color_likes_count + " Likes";
+                                  } else {
+                                    document.getElementById("color_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                                  }
+                                }
+                              </script>
+                              <script>
+                                function color_dislikes() {
+                                  if (typeof(Storage) !== "undefined") {
+                                    if (localStorage.color_dislikes_count) {
+                                      localStorage.color_dislikes_count = Number(localStorage.color_dislikes_count)+1;
+                                    } else {
+                                      localStorage.color_dislikes_count = 1;
+                                    }
+                                    document.getElementById("color_dislikes_result").innerHTML =  localStorage.color_dislikes_count + " Dislikes";
+                                  } else {
+                                    document.getElementById("color_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                                  }
+                                }
+                              </script>
+                              <!--Like and dislike buttons-->
+                              <i onclick="color_likes()" class="fa fa-2x fa-heart" color="red"></i>
+                              <span id="color_likes_result"></span>
+                              <i onclick="color_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
+                              <span id="color_dislikes_result"></span>
+                            <div class="container" style="text-align:right">
+                              <h5>Share This Post</h5>
+                              <div class="social">
+                                <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
+                                <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
+                                <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
+                                <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
+                              </div>
+                            </div>
                         </div>
                         <div class = "box-site text-center">
+                          <!--learning to code-->
                             <a name="Code"></a>
-                            <h1>5 Ways Learning to Code Can Benefit you <strong>Right Now</strong></h1>
-                        </div>
-                        <div class = "box-site" style="left">
-                            <h3><strong> 1</strong> <br>Tech is Everywhere</h3>
-                            <p> These days the tech industry isn’t just the tech industry. Computers and code are everywhere. Schools, hospitals, government offices—all of these institutions rely on digital infrastructure—and that means job opportunities for the coders that speak their language.</P>
-                            <h3> <strong>2 </strong><br> Make More Money</h3>
-                            <p> With 2014 research showing starting positions at some companies clocking in at $88,500 a year and higher-end salaries at companies like Apple and Node.js ranging from $116,000 to $128,000, you can find a job you love and be well compensated for doing it!</P>
-                            <h3><strong> 3 </strong><br> Automation</h3>
-                            <p> As automation continues to proliferate the workforce, many jobs that have traditionally been staffed by human beings are in fact, well…giving way to robots. One thing that’s certain though in the wake of this transition is that human beings will still be needed to program and oversee automated systems. Enter coding. Coding is the language that automates the robot masses and it’s the language that will guarantee your job security in a changing world of work.</p>
-                            <h3><strong> 4 </strong><br> Critical Thinking is Critical</h3>
-                            <p> Critical thinking is a key skill for any profession but particularly in the tech field where innovation rules. Coding is the language of critical thought, as you literally use syntax and semantics to “speak” your way through problems and make ideas real. Learning to code will not only bring about the benefits directly related to coding skills, but it will help you hone your critical thinking and take you to a whole new level of problem solving.</p>
-                            <h3> <strong>5</strong> <br> DIY</h3>
-                            <p> Coding skills allow you to build the websites and applications you need to get jobs done without having to rely on others to do it for you. In a business world where websites and applications are ubiquitous parts of the landscape, your ability to do these things for yourself will increase your productivity, efficiency, and overall professional empowerment. You’ll no longer be hunting and pecking through the WordPress admin dashboard to get the results you want—you’ll be making up your own content in HTML making things look, work, and feel the way YOU want them to. And you won’t be waiting for tech support to help you with your blog, or website, or email templates either, you’ll be in there under the hood yourself, making it happen on YOUR terms.</p>
+                            <h1>5 Ways Learning to Code Can Benefit you right Now</h1>
+                            <div id = 'more-code' class = 'fulltext'>
+                              <span style="text-align: left">
+                                <h3><strong> 1</strong> Tech is Everywhere</h3>
+                                <p> These days the tech industry isn’t just the tech industry. Computers and code are everywhere. Schools, hospitals, government offices—all of these institutions rely on digital infrastructure—and that means job opportunities for the coders that speak their language.</P>
+                                <h3> <strong>2 </strong> Make More Money</h3>
+                                <p> With 2014 research showing starting positions at some companies clocking in at $88,500 a year and higher-end salaries at companies like Apple and Node.js ranging from $116,000 to $128,000, you can find a job you love and be well compensated for doing it!</P>
+                                <h3><strong> 3 </strong> Automation</h3>
+                                <p> As automation continues to proliferate the workforce, many jobs that have traditionally been staffed by human beings are in fact, well…giving way to robots. One thing that’s certain though in the wake of this transition is that human beings will still be needed to program and oversee automated systems. Enter coding. Coding is the language that automates the robot masses and it’s the language that will guarantee your job security in a changing world of work.</p>
+                                <h3><strong> 4 </strong> Critical Thinking is Critical</h3>
+                                <p> Critical thinking is a key skill for any profession but particularly in the tech field where innovation rules. Coding is the language of critical thought, as you literally use syntax and semantics to “speak” your way through problems and make ideas real. Learning to code will not only bring about the benefits directly related to coding skills, but it will help you hone your critical thinking and take you to a whole new level of problem solving.</p>
+                                <h3> <strong>5</strong>  DIY</h3>
+                                <p> Coding skills allow you to build the websites and applications you need to get jobs done without having to rely on others to do it for you. In a business world where websites and applications are ubiquitous parts of the landscape, your ability to do these things for yourself will increase your productivity, efficiency, and overall professional empowerment. You’ll no longer be hunting and pecking through the WordPress admin dashboard to get the results you want—you’ll be making up your own content in HTML making things look, work, and feel the way YOU want them to. And you won’t be waiting for tech support to help you with your blog, or website, or email templates either, you’ll be in there under the hood yourself, making it happen on YOUR terms.</p>
+                                <br>
+                              </span>
+                              <p> Still not convinced? <br> Watch this video on the imprtance of coding</p>
+                              <iframe width="560" height="315" src="https://www.youtube.com/embed/xfBWk4nw440" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <button   aria-expanded = 'false' aria-controls='more-code' class = 'toggle-content'hidden><span class="text">Show More</span> <span class="visually-hidden"></span></button>
+                            <script>
+                              function code_likes() {
+                                if (typeof(Storage) !== "undefined") {
+                                  if (localStorage.code_likes_count) {
+                                    localStorage.code_likes_count = Number(localStorage.code_likes_count)+1;
+                                  } else {
+                                    localStorage.code_likes_count = 1;
+                                  }
+                                  document.getElementById("code_likes_result").innerHTML =  localStorage.code_likes_count + " Likes";
+                                } else {
+                                  document.getElementById("code_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                                }
+                              }
+                            </script>
+                            <script>
+                              function code_dislikes() {
+                                if (typeof(Storage) !== "undefined") {
+                                  if (localStorage.code_dislikes_count) {
+                                    localStorage.code_dislikes_count = Number(localStorage.code_dislikes_count)+1;
+                                  } else {
+                                    localStorage.code_dislikes_count = 1;
+                                  }
+                                  document.getElementById("code_dislikes_result").innerHTML =  localStorage.code_dislikes_count + " Dislikes";
+                                } else {
+                                  document.getElementById("code_dislikes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                                }
+                              }
+                            </script>
+                            <!--Like and dislike buttons-->
                             <br>
-                        </div>
-                        <div class = "box-site text-center">
-                            <p> Still not convinced? <br> Watch this video on the imprtance of coding</p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/xfBWk4nw440" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <br>
+                            <i onclick="code_likes()" class="fa fa-2x fa-heart" color="red"></i>
+                            <span id="code_likes_result"></span>
+                            <i onclick="code_dislikes()" class="fa fa-2x fa-thumbs-down" color="gold"></i>
+                            <span id="code_dislikes_result"></span>
+                            <div class="container" style="text-align:right">
+                              <h5>Share This Post</h5>
+                              <div class="social">
+                                <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#7386D5"></i></a>
+                                <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#7386D5"></i></a>
+                                <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#7386D5"></i></a>
+                                <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#7386D5"></i></a>
+                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -274,5 +510,6 @@
         <!-- Bootstrap JS -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
         <script src='js/collapse_sidebar.js'></script>
+        <script src='js/moretext.js'></script>
     </body>
 </html>

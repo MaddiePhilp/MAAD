@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>MAAD Quiz</title>
+        <link rel="shortcut icon" href = 'img/lady.png' />
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Font Awesome Source -->
+        <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+        <!-- Sidebar Holder -->
+            <nav id="sidebar">
+              <div class = "sticky-top">
+                <ul class="list-unstyled components">
+                    <!--Sidebar page links-->
+                    <li>
+                      <a href="index.html">
+                          <i class="fas fa-home"></i>
+                          Home
+                      </a>
+                    </li>
+                    <li>
+                        <a href="Most_recent.html">
+                            <i class="fas fa-plus-circle"></i>
+                            Most Recent
+                        </a>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <i class="fas fa-copy"></i>
+                            Topics
+                        </a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <!--sidebar drop down-->
+                            <li>
+                                <a href="Careers.html"><i class="fas fa-briefcase"></i> Careers</a>
+                            </li>
+                            <li>
+                                <a href="Style.html"><i class="fas fa-tshirt"></i> Style</a>
+                            </li>
+                            <li>
+                                <a href="DIY.html"><i class="fas fa-adjust"></i> DIY</a>
+                            </li>
+                            <li>
+                                <a href="News.html"><i class="fas fa-newspaper"></i>  News</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                      <a href="quiz.html">
+                          <i class="fas fa-grin-squint-tears"></i>
+                          Quiz
+                      </a>
+                        <a href="SocialLinks.html">
+                            <i class="fas fa-paper-plane"></i>
+                            Social
+                        </a>
+                        <a href="AboutUs.html">
+                            <i class="fas fa-address-card"></i>
+                            About Us
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-unstyled CTAs">
+                    <!--email and contact buttons-->
+                    <li>
+                      <button type="button" class="btn block" data-toggle="modal" data-target="#emailform">
+                        Newsletter
+                      </button>
+                    </li>
+                    <br>
+                    <li>
+                      <button type="button" class="btn" data-toggle="modal" data-target="#contactform">
+                        Contact Form
+                      </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+            <!-- Email Sign up Modal -->
+              <div class="modal fade" id="emailform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backgrop = "false">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Sign up for our weeky Newsletter!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <!--Email Form-->
+                      <form>
+                        <input type="email" placeholder="Email Address">
+                        <button type="submit" class="btn btn-success">
+                          <i class="fas fa-check-circle"></i>
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!--Contact Form Modal -->
+            <div class="modal fade" id="contactform" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backgrop = "false">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body text-center">
+                        <!--Contact Us Form-->
+                            <form action="action_page.php">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+                                <input type="email" id="fname" name="firstname" placeholder="Your email.."><br><br>
+                                <label for="country">Country</label>
+                                <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                                <option value="usa">UK</option>
+                                </select><br><br>
+                                <textarea id="subject" name="subject" placeholder="What would you like to contact us about?" style="height:200px"></textarea><br>
+                                <input type="submit" value="Submit"><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                        <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                      <img src="img/lady.png" width="30" height="45" alt="" class="d-inline-block align-center">
+                      MAAD with the Juice!
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                          <form class="form-inline my-2 my-lg-0">
+                            <!--Search Box-->
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                          </form>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--Page content-->
+            <div class="box">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <div class = "box-site text-center">
+                      <h1>Quiz of the Week!</h1>
+                      <img class="img-fluid" height = 400 widht = 400 src="img/quiz2.jpg">
+                      <br><br>
+                      <h4>Test your general knowledge in our super fun quiz! </h3>
+                      <br><br>
+                      <p>Check back every Wednesday for new questions.</p>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row h-100">
+                  <div class="col-lg-2">
+
+                  </div>
+                      <div class="col-sm-12 col-lg-8 my-auto box-site text-center">
+                        <div class="quizContainer  box-site text-center">
+                        <h2>Wednesday 2<sup>nd</sup> April  <span class="badge badge-secondary">New</span></h2>
+                        <br>
+                        <div class="question"></div><br>
+                        <ul class="choiceList"></ul>
+                        <div class="quizMessage"></div>
+                        <div class="result"></div>
+                        <button class="preButton btn btn-danger ">Previous Question</button>
+                        <button class="nextButton btn btn-success ">Next Question</button>
+                    </div>
+                    <!--share and like-->
+                    <div class="row LikeAndSocialFooter">
+                      <!--like-->
+                      <div class="col" style="text-align:left">
+                        <script>
+                        function quiz_likes() {
+                          if (typeof(Storage) !== "undefined") {
+                            if (localStorage.quiz_likes_count) {
+                              localStorage.quiz_likes_count = Number(localStorage.quiz_likes_count)+1;
+                            } else {
+                              localStorage.quiz_likes_count = 1;
+                            }
+                            document.getElementById("quiz_likes_result").innerHTML =  localStorage.quiz_likes_count + " Likes";
+                          } else {
+                            document.getElementById("quiz_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                          }
+                        }
+                      </script>
+                      <script>
+                        function quiz_dislikes() {
+                          if (typeof(Storage) !== "undefined") {
+                            if (localStorage.quiz_dislikes_count) {
+                              localStorage.quiz_dislikes_count = Number(localStorage.quiz_dislikes_count)+1;
+                            } else {
+                              localStorage.quiz_dislikes_count = 1;
+                            }
+                            document.getElementById("quiz_likes_result").innerHTML =  localStorage.quiz_dislikes_count + " Dislikes";
+                          } else {
+                            document.getElementById("quiz_likes_result").innerHTML = "Sorry, your browser does not support web storage...";
+                          }
+                        }
+                      </script>
+                      <!--Like and dislike buttons-->
+                      <h5>React</h5>
+                      <i onclick="quiz_likes()" class="fa fa-2x fa-heart" color="#fff"></i>
+                      <span id="quiz_likes_result"></span>
+                      <i onclick="quiz_dislikes()" class="fa fa-2x fa-thumbs-down" color="#fff"></i>
+                      <span id="quiz_dislikes_result"></span>
+                    </div>
+                    <div class="col" style="text-align:right">
+                      <h5>Share</h5>
+                      <div class="social">
+                        <a href="#" id="share-fb" class="sharer button"><i class="fab fa-2x fa-facebook-square" style = "color:#fff"></i></a>
+                        <a href="#" id="share-tw" class="sharer button"><i class="fab fa-2x fa-twitter-square" style = "color:#fff"></i></a>
+                        <a href="#" id="share-gp" class="sharer button"><i class="fab fa-2x fa-google-plus-square" style = "color:#fff"></i></a>
+                        <a href="#" id="share-em" class="sharer button"><i class="fa fa-2x fa-envelope-square" style = "color:#fff"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Share and like end-->
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer -->
+          <footer class="page-footer font-small teal pt-4">
+          <!-- Footer Text -->
+            <div class="container-fluid text-center text-md-left mt-2">
+              <!-- Grid row -->
+              <div class="row">
+                <!-- Grid column -->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                      <a href="index.html!">Home</a>
+                    </p>
+                    <p>
+                      <a href="SocialLinks.html">Social</a>
+                    </p>
+                    <p>
+                      <a href="faq.html">FAQ</a>
+                    </p>
+                    <p>
+                      <a href="AboutUs.html">About Us</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+                  <!-- Content -->
+                  <h6 class="text-uppercase font-weight-bold">MAAD With the Juice!</h6>
+                  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 100px;">
+                  <br>
+                  <p>
+                    We are a group of students from Aberystwyth University learning to code and this is
+                    our first website! MAAD with the juice, is dedicated to documenting the issues you care
+                    about. We're using the power of the internet to change our world.
+                  </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                  <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                  <p>
+                    <i class="fas fa-home mr-3"></i>MAAD HQ</p>
+                  <p>
+                    <i class="fas fa-envelope mr-3"></i> info@MAAD.co.uk</p>
+                  <p>
+                    <i class="fas fa-phone mr-3"></i> +44 (0) 1432 789 21</p>
+                  <p>
+                    <i class="fas fa-print mr-3"></i> +44 (0) 1432 789 21</p>
+                </div>
+              </div>
+              <!-- Grid row -->
+            </div>
+            <!-- Footer Text -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+              <a href="https://mdbootstrap.com/education/bootstrap/"> MAAD with the Juice!</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+        </div>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <!--Collaspse Sidebar JS-->
+        <script src='js/collapse_sidebar.js'></script>
+        <!--quiz javscript-->
+        <script type="text/javascript" src="js/quiz.js"></script>
+    </body>
+</html>
